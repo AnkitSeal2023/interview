@@ -4,11 +4,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Dealt typeface (true-black-flat): one grotesk, bundled locally */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* True-black flat · dealt style (seed 245007654)                      */
+/* ------------------------------------------------------------------ */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Menlo", monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -46,63 +59,119 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+  --color-data: var(--data);
+  --color-positive-bg: var(--positive-bg);
+  --color-negative-bg: var(--negative-bg);
+  --color-warning-bg: var(--warning-bg);
+  --color-neutral-bg: var(--neutral-bg);
 }
 
-/* ------- Black/gray dark theme (always dark) ------- */
+/* ------------------------------------------------------------------ */
+/* True-black flat · dealt style (seed 245007654)                      */
+/* One ground (#000), elevation by lightness alone, no borders or      */
+/* shadows at rest; one data hue (brand sky blue) on live data only.   */
+/* Primary control = inversion: white pill, black text.                */
+/* ------------------------------------------------------------------ */
 :root {
-  --radius: 0.6rem;
-  --background: oklch(0.145 0 0);            /* near-black */
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.175 0 0);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.185 0 0);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.93 0 0);                /* white buttons on black */
-  --primary-foreground: oklch(0.15 0 0);
-  --secondary: oklch(0.23 0 0);
-  --secondary-foreground: oklch(0.93 0 0);
-  --muted: oklch(0.22 0 0);
-  --muted-foreground: oklch(0.62 0 0);
-  --accent: oklch(0.26 0 0);
-  --accent-foreground: oklch(0.95 0 0);
-  --destructive: oklch(0.55 0.17 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.28 0 0);
-  --input: oklch(0.26 0 0);
-  --ring: oklch(0.42 0 0);
-  --chart-1: oklch(0.65 0.12 250);
-  --chart-2: oklch(0.62 0.10 160);
-  --chart-3: oklch(0.60 0.14 60);
-  --chart-4: oklch(0.55 0.10 310);
-  --chart-5: oklch(0.65 0.16 25);
-  --sidebar: oklch(0.165 0 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.93 0 0);
-  --sidebar-primary-foreground: oklch(0.15 0 0);
-  --sidebar-accent: oklch(0.24 0 0);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.28 0 0);
-  --sidebar-ring: oklch(0.42 0 0);
+  --ground: #000000;
+  --surface: #111111;
+  --raised: #2a2a2a;
+
+  --radius: 1.25rem; /* 20px cards; controls are pills via component styles */
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #111111;
+  --card-foreground: #ffffff;
+  --popover: #161616; /* floats one step above cards: menu, dialog */
+  --popover-foreground: #ffffff;
+  --primary: #ffffff; /* inverted primary: white fill, black label */
+  --primary-foreground: #0a0a0a;
+  --secondary: #1d1d1d;
+  --secondary-foreground: #ffffff;
+  --muted: #1d1d1d;
+  --muted-foreground: #b4b4b4;
+  --accent: #262626; /* hover/active fill only — never a colour on chrome */
+  --accent-foreground: #ffffff;
+  --destructive: #e5484d;
+  --destructive-foreground: #ffffff;
+  --border: #2a2a2a; /* structural lines, 30 levels above the ground */
+  --input: #444444; /* control borders one step brighter */
+  --ring: #4cb3f0;
+
+  /* Status: pale same-hue tints; ink at 4.5:1 on its tint */
+  --positive: #3fc07a;
+  --positive-bg: #172a1d;
+  --negative: #e5566f;
+  --negative-bg: #2c1a20;
+  --warning: #e5a93b;
+  --warning-bg: #2b2414;
+  --neutral: #ffffff;
+  --neutral-bg: #222222;
+
+  /* One data hue: panel sky blue (continuity with the product's brand hue).
+     Belongs to live data — clock, recording state, chart series — and focus.
+     Never on buttons, tabs or nav. */
+  --data: #4cb3f0;
+
+  --chart-1: #4cb3f0;
+  --chart-2: #e6e6e6;
+  --chart-3: #6b6b6b;
+  --chart-4: #949494;
+  --chart-5: #4a4a4a;
+
+  --sidebar: #000000;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #222222;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1a1a1a;
+  --sidebar-ring: #4cb3f0;
+
+  --gap: 14px;
+  --control-height: 36px;
 }
 
 @layer base {
   * { @apply border-border outline-ring/50; }
-  body { @apply bg-background text-foreground; }
+  body {
+    @apply bg-background text-foreground text-[14px] leading-5 antialiased;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  ::placeholder { color: #6f6f6f; }
+  ::selection { background: #1f3a5c; color: #ffffff; }
 }
 
-/* ------- grid-lined background (black-gray) ------- */
-body {
-  background-image:
-    linear-gradient(oklch(1 0 0 / 3.5%) 1px, transparent 1px),
-    linear-gradient(90deg, oklch(1 0 0 / 3.5%) 1px, transparent 1px);
-  background-size: 28px 28px;
-  background-position: center;
-}
-
-/* subtle top header hairline + panel accents */
+/* Panels: the surface itself, nothing else. Kept as a class so the
+   existing call sites stay valid; the old inner hairline is gone. */
 .hairline-panel {
-  box-shadow: inset 0 1px 0 oklch(1 0 0 / 4%);
+  background: var(--card);
 }
+
+/* Status pills: pale tint, ink of the same hue, 20px tall */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.pill-positive { background: var(--positive-bg); color: var(--positive); }
+.pill-negative { background: var(--negative-bg); color: var(--negative); }
+.pill-warning  { background: var(--warning-bg);  color: var(--warning); }
+.pill-neutral  { background: var(--neutral-bg);  color: var(--neutral); }
+.pill-outline  { background: transparent; color: var(--muted-foreground); box-shadow: inset 0 0 0 1px var(--border); }
+
+.num { font-variant-numeric: tabular-nums; }
+td.num, th.num { text-align: right; }
 
 body:has(.interview-screen) > .site-header {
   display: none;

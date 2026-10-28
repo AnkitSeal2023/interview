@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import UserMenu from "@/components/UserMenu";
 import { AuthProvider } from "@/components/AuthProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Role Mock Interview",
+  title: "Role Mock — mock interviews by role",
   description: "AI-powered mock interviews for technical, analytical, and product roles",
 };
 
@@ -27,19 +16,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable}  min-h-screen `}>
+      <body className="min-h-screen font-sans">
         <AuthProvider>
-          <header className="site-header border-b border-border/70 bg-background/80 backdrop-blur sticky top-0 z-20">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-              <Link href="/" className="font-semibold tracking-tight">
-                Role<span className="text-neutral-500">·</span>Mock
+          <header className="site-header sticky top-0 z-20 border-b border-[#1a1a1a] bg-background">
+            <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 md:px-6">
+              <Link
+                href="/"
+                className="text-[15px] font-semibold tracking-tight text-foreground"
+              >
+                Role Mock
               </Link>
-              <nav className="flex items-center text-sm text-neutral-400">
+              <nav className="flex items-center gap-5 text-sm text-muted-foreground">
+                <Link href="/" className="hidden hover:text-foreground sm:inline">
+                  New interview
+                </Link>
+                <Link href="/reports" className="hidden hover:text-foreground sm:inline">
+                  My sessions
+                </Link>
+                <span className="hidden h-6 w-px bg-[#1a1a1a] sm:block" aria-hidden="true" />
                 <UserMenu />
               </nav>
             </div>
           </header>
-          <main className="mx-auto max-w-6xl px-2 h-screen">{children}</main>
+          <main className="mx-auto max-w-6xl px-4 pb-16 md:px-6">{children}</main>
         </AuthProvider>
       </body>
     </html>

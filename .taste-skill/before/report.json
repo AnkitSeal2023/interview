@@ -1,0 +1,1481 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-28T11:22:35.679Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.67,
+    0.72
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 997,
+     "screens": 1.1,
+     "words": 121,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 60,
+     "vw": 4.2,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1,
+     "top": 238,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "lines": 2,
+     "size": 60,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Practice the interview you actually want.",
+      "words": 6,
+      "chars": 41,
+      "lines": 2,
+      "size": 60,
+      "vw": 4.2,
+      "font": "-apple-system",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 238,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      60
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 75,
+     "max": {
+      "size": 60,
+      "vw": 4.2,
+      "font": "-apple-system",
+      "text": "Practice the interview you actually want"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.019,
+     "microSamples": [
+      "Role·Mock",
+      "01",
+      "02",
+      "03"
+     ],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "Role·Mock",
+      "above": "Practice the interview you actually want",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 202
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 864
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 864
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 864
+     }
+    ],
+    "color": {
+     "bodyBg": "#0a0a0a",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#a1a1a1",
+       "share": 0.61
+      },
+      {
+       "color": "#737373",
+       "share": 0.11
+      },
+      {
+       "color": "#eeeeee",
+       "share": 0.1
+      },
+      {
+       "color": "#e5e5e5",
+       "share": 0.09
+      },
+      {
+       "color": "#fafafa",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#e8e8e8",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.91
+      },
+      "fg": "#0b0b0b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Sign in to start",
+      "Create a free account"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "section.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group/button.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.site-header.border-b 1440px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 13,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 647
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 997,
+    "margins": {
+     "left": 160,
+     "right": 171
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 121,
+      "height": 502,
+      "words": 53,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Practice the interview you actually want.",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 201,
+      "right": 583,
+      "textLeft": 201,
+      "textRight": 583,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-6.grid",
+      "tag": "section",
+      "top": 647,
+      "height": 168,
+      "words": 57,
+      "media": 0,
+      "middle": 76,
+      "heading": null,
+      "left": 176,
+      "right": 185,
+      "textLeft": 176,
+      "textRight": 185,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Practice the interview you actually want.",
+      "size": 60,
+      "top": 238,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 201,
+      "n": 2
+     },
+     {
+      "x": 176,
+      "n": 1
+     },
+     {
+      "x": 560,
+      "n": 1
+     },
+     {
+      "x": 944,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.23,
+    "voidBox": {
+     "x": 900,
+     "y": 120,
+     "w": 540,
+     "h": 540
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#0a0a0a",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 160,
+     "right": 171
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 60,
+     "vw": 4.2,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1,
+     "top": 238,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       13,
+       3
+      ],
+      [
+       21,
+       1
+      ],
+      [
+       17,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 1,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 0,
+     "kpiMax": 12
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.11,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      60
+     ]
+    },
+    "title": {
+     "text": "Practice the interview you actually want.",
+     "size": 60,
+     "top": 238
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.8,
+    0.73
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1081,
+     "screens": 1.1,
+     "words": 121,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 60,
+     "vw": 7.8,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1,
+     "top": 238,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "lines": 2,
+     "size": 60,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Practice the interview you actually want.",
+      "words": 6,
+      "chars": 41,
+      "lines": 2,
+      "size": 60,
+      "vw": 7.8,
+      "font": "-apple-system",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 238,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      60
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 73,
+     "max": {
+      "size": 60,
+      "vw": 7.8,
+      "font": "-apple-system",
+      "text": "Practice the interview you actually want"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.019,
+     "microSamples": [
+      "Role·Mock",
+      "01",
+      "02",
+      "03"
+     ],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "Role·Mock",
+      "above": "Practice the interview you actually want",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 202
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 888
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 888
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 888
+     }
+    ],
+    "color": {
+     "bodyBg": "#0a0a0a",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#a1a1a1",
+       "share": 0.61
+      },
+      {
+       "color": "#737373",
+       "share": 0.11
+      },
+      {
+       "color": "#eeeeee",
+       "share": 0.1
+      },
+      {
+       "color": "#e5e5e5",
+       "share": 0.09
+      },
+      {
+       "color": "#fafafa",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#e8e8e8",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.91
+      },
+      "fg": "#0b0b0b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Sign in to start",
+      "Create a free account"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "section.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group/button.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.site-header.border-b 768px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 13,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 647
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1081,
+    "margins": {
+     "left": 16,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 121,
+      "height": 502,
+      "words": 53,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Practice the interview you actually want.",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 57,
+      "right": 58,
+      "textLeft": 57,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-6.grid",
+      "tag": "section",
+      "top": 647,
+      "height": 192,
+      "words": 57,
+      "media": 0,
+      "middle": 66,
+      "heading": null,
+      "left": 32,
+      "right": 34,
+      "textLeft": 32,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Practice the interview you actually want.",
+      "size": 60,
+      "top": 238,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 57,
+      "n": 2
+     },
+     {
+      "x": 32,
+      "n": 1
+     },
+     {
+      "x": 288,
+      "n": 1
+     },
+     {
+      "x": 544,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#0a0a0a",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 16,
+     "right": 27
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 2,
+     "size": 60,
+     "vw": 7.8,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1,
+     "top": 238,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       13,
+       3
+      ],
+      [
+       21,
+       1
+      ],
+      [
+       17,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 1,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 0,
+     "kpiMax": 12
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.11,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      14,
+      16,
+      18,
+      60
+     ]
+    },
+    "title": {
+     "text": "Practice the interview you actually want.",
+     "size": 60,
+     "top": 238
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.93,
+    0.79
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1449,
+     "screens": 1.7,
+     "words": 121,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 3,
+     "size": 36,
+     "vw": 9.2,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.11,
+     "top": 174,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "lines": 3,
+     "size": 36,
+     "font": "-apple-system"
+    },
+    "headings": [
+     {
+      "text": "Practice the interview you actually want.",
+      "words": 6,
+      "chars": 41,
+      "lines": 3,
+      "size": 36,
+      "vw": 9.2,
+      "font": "-apple-system",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 174,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "-apple-system",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      12,
+      14,
+      16,
+      36
+     ],
+     "sizeCount": 4,
+     "notLoaded": [],
+     "body": {
+      "font": "-apple-system",
+      "size": 14,
+      "leading": 1.71,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.4
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "-apple-system",
+      "text": "Practice the interview you actually want"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 4,
+     "microLabelShare": 0.019,
+     "microSamples": [
+      "Role·Mock",
+      "01",
+      "02",
+      "03"
+     ],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 1
+    },
+    "eyebrows": [
+     {
+      "text": "Role·Mock",
+      "above": "Practice the interview you actually want",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 138
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1232
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1292
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1352
+     }
+    ],
+    "color": {
+     "bodyBg": "#0a0a0a",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.04
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#a1a1a1",
+       "share": 0.61
+      },
+      {
+       "color": "#737373",
+       "share": 0.11
+      },
+      {
+       "color": "#eeeeee",
+       "share": 0.1
+      },
+      {
+       "color": "#e5e5e5",
+       "share": 0.09
+      },
+      {
+       "color": "#fafafa",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#e8e8e8",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.91
+      },
+      "fg": "#0b0b0b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 8,
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Sign in to start",
+      "Create a free account"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "section.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "a.group/button.inline-flex → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "header.site-header.border-b 390px"
+     ],
+     "outlinedBoxes": 2,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 13,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1449,
+    "margins": {
+     "left": 16,
+     "right": 27
+    },
+    "sections": [
+     {
+      "sel": "section.relative.overflow-hidden",
+      "tag": "section",
+      "top": 89,
+      "height": 562,
+      "words": 53,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Practice the interview you actually want.",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-6.grid",
+      "tag": "section",
+      "top": 675,
+      "height": 512,
+      "words": 57,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 42,
+      "textLeft": 32,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.mt-6.grid",
+      "tag": "section",
+      "top": 1211,
+      "height": 206,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 29,
+      "right": 182,
+      "textLeft": 29,
+      "textRight": 182,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Practice the interview you actually want.",
+      "size": 36,
+      "top": 174,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#0a0a0a",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 16,
+     "right": 27
+    },
+    "hero": {
+     "text": "Practice the interview you actually want.",
+     "words": 6,
+     "chars": 41,
+     "lines": 3,
+     "size": 36,
+     "vw": 9.2,
+     "font": "-apple-system",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.11,
+     "top": 174,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       13,
+       3
+      ],
+      [
+       21,
+       1
+      ],
+      [
+       17,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 1,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 3,
+     "tabularShare": 0,
+     "kpiMax": 12
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.11,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      14,
+      16,
+      36
+     ]
+    },
+    "title": {
+     "text": "Practice the interview you actually want.",
+     "size": 36,
+     "top": 174
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "4 tiny uppercase letter-spaced labels (e.g. \"Role·Mock\", \"01\", \"02\", \"03\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "font-not-dealt",
+   "width": 1440,
+   "message": "The sheet dealt Inter, but the page renders -apple-system.",
+   "fix": "Load the dealt face (the link on the sheet) and put it first in font-family. A build that falls back to a default face lands on the default look."
+  },
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 60px (\"Practice the interview you actually want\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Practice the interview you actually want.\" → 3 lines (6 words, 36px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/before/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

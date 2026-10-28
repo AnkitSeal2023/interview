@@ -23,3 +23,129 @@
  GET / 200 in 30ms (next.js: 1.9ms, application-code: 29ms)
  GET /login 200 in 29ms (next.js: 11ms, application-code: 19ms)
  GET / 200 in 29ms (next.js: 13ms, application-code: 15ms)
+ GET / 200 in 26ms (next.js: 1.5ms, application-code: 25ms)
+ GET / 200 in 30ms (next.js: 2ms, application-code: 28ms)
+ GET /login 200 in 38ms (next.js: 1.1ms, application-code: 37ms)
+ GET /reports 200 in 68ms (next.js: 11ms, application-code: 57ms)
+ GET / 200 in 63ms (next.js: 3ms, application-code: 59ms)
+ GET / 200 in 41ms (next.js: 2ms, application-code: 39ms)
+ GET / 200 in 51ms (next.js: 1.8ms, application-code: 49ms)
+✓ Compiled in 189ms
+✓ Compiled in 460ms
+✓ Compiled in 113ms
+✓ Compiled in 77ms
+✓ Compiled in 78ms
+✓ Compiled in 124ms
+✓ Compiled in 52ms
+✓ Compiled in 169ms
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+⨯ ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2'
+
+[browser] ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2' 
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 653ms
+✓ Running next.config.ts took 212ms
+
+⨯ ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2'
+
+ GET / 500 in 405ms (next.js: 309ms, application-code: 96ms)
+⨯ ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2'
+
+ GET / 500 in 15ms (next.js: 7ms, application-code: 8ms)
+[?25h
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 393ms
+✓ Running next.config.ts took 42ms
+
+⨯ ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2'
+
+ GET / 500 in 288ms (next.js: 193ms, application-code: 95ms)
+⨯ ./src/app/layout.tsx
+Error: Font file not found: Can't resolve './fonts/InterVariable.woff2'
+
+ GET / 500 in 12ms (next.js: 3ms, application-code: 9ms)
+✓ Compiled in 103ms
+ GET / 200 in 327ms (next.js: 168ms, application-code: 159ms)
+ GET / 200 in 37ms (next.js: 2ms, application-code: 34ms)
+ GET / 200 in 30ms (next.js: 3ms, application-code: 28ms)
+ GET / 200 in 25ms (next.js: 1.0ms, application-code: 24ms)
+ GET / 200 in 28ms (next.js: 1.3ms, application-code: 27ms)
+ GET / 200 in 22ms (next.js: 1.1ms, application-code: 21ms)
+ GET / 200 in 36ms (next.js: 3ms, application-code: 33ms)
+ GET / 200 in 27ms (next.js: 1.0ms, application-code: 26ms)
+ GET / 200 in 32ms (next.js: 1.3ms, application-code: 30ms)
+✓ Compiled in 19ms
+ GET / 200 in 62ms (next.js: 4ms, application-code: 57ms)
+ GET / 200 in 34ms (next.js: 1.2ms, application-code: 33ms)
+ GET / 200 in 11ms (next.js: 4ms, application-code: 8ms)
+ GET / 200 in 15ms (next.js: 1.7ms, application-code: 13ms)
+17:23:44 supervisor: next dev exited rc=0 — restarting in 2s
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.0.149:3001
+✓ Ready in 526ms
+✓ Running next.config.ts took 41ms
+
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 382ms
+✓ Running next.config.ts took 43ms
+
+ GET / 200 in 328ms (next.js: 147ms, application-code: 181ms)
+ GET / 200 in 29ms (next.js: 1.3ms, application-code: 28ms)
+ GET / 200 in 30ms (next.js: 1.4ms, application-code: 28ms)
+ GET / 200 in 28ms (next.js: 1.4ms, application-code: 27ms)
+ GET / 200 in 14ms (next.js: 4ms, application-code: 10ms)
+ GET / 200 in 16ms (next.js: 1.5ms, application-code: 14ms)
+ GET / 200 in 9ms (next.js: 1.6ms, application-code: 7ms)
+ GET / 200 in 16ms (next.js: 1.4ms, application-code: 14ms)
+ GET /reports 200 in 37ms (next.js: 11ms, application-code: 26ms)
+ GET /login 200 in 44ms (next.js: 6ms, application-code: 37ms)
+ GET / 200 in 14ms (next.js: 1.4ms, application-code: 12ms)
+ GET /session/89d2892f-9f4c-4be6-912f-e04f3921a319 200 in 441ms (next.js: 410ms, application-code: 31ms)
+ GET / 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET /session/330bccba-43d4-4b70-bee0-038e4d555cc3 200 in 31ms (next.js: 10ms, application-code: 21ms)
+ GET / 200 in 15ms (next.js: 1.8ms, application-code: 14ms)
+[?25h

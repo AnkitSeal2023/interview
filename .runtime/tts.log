@@ -17,3 +17,135 @@
 2026-10-28 14:44:59,110 TTS.utils.synthesizer INFO Segmenters initialized for: dict_keys(['en-us'])
 2026-10-28 14:44:59,110 tts_service INFO model loaded
 2026-10-28 14:44:59,110 tts_service INFO model preloaded — first request will synthesize immediately
+2026-10-28 17:25:51,012 tts_service INFO TTS service on 127.0.0.1:8001 (model=tts_models/en/ljspeech/tacotron2-DDC)
+2026-10-28 17:25:51,012 tts_service INFO loading tts_models/en/ljspeech/tacotron2-DDC (first call only; may download the model)
+2026-10-28 17:25:53,867 tts_service INFO "GET /health HTTP/1.1" 200 -
+2026-10-28 17:25:56,548 TTS.utils.manage INFO tts_models/en/ljspeech/tacotron2-DDC is already downloaded.
+2026-10-28 17:25:56,559 TTS.utils.manage INFO vocoder_models/en/ljspeech/hifigan_v2 is already downloaded.
+2026-10-28 17:25:56,562 TTS.tts.models INFO Using model: Tacotron2
+2026-10-28 17:25:56,572 TTS.utils.audio.processor INFO Setting up Audio Processor...
+2026-10-28 17:25:57,222 TTS.tts.utils.languages WARNING Dataset `` has no language specified.
+2026-10-28 17:25:57,523 TTS.tts.models.base_tacotron INFO Model's reduction rate `r` is set to: 1
+2026-10-28 17:25:57,526 TTS.utils.audio.processor INFO Setting up Audio Processor...
+2026-10-28 17:25:57,533 TTS.vocoder.models INFO Vocoder model: hifigan
+2026-10-28 17:25:57,533 TTS.utils.audio.processor INFO Setting up Audio Processor...
+2026-10-28 17:25:57,534 TTS.vocoder.models INFO Generator model: hifigan_generator
+2026-10-28 17:25:57,569 TTS.vocoder.models INFO Discriminator model: hifigan_discriminator
+2026-10-28 17:25:57,950 TTS.vocoder.models.hifigan_generator INFO Removing weight norm...
+2026-10-28 17:25:57,961 TTS.utils.synthesizer INFO Segmenters initialized for: dict_keys(['en-us'])
+2026-10-28 17:25:57,961 tts_service INFO model loaded
+2026-10-28 17:25:57,962 tts_service INFO model preloaded — first request will synthesize immediately
+2026-10-28 17:26:08,739 tts_service INFO stream: 8 sentence(s), 509 chars
+2026-10-28 17:26:08,740 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:26:08,740 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:08,740 TTS.utils.synthesizer INFO Input: ["Hi James, I'm Arjun."]
+2026-10-28 17:26:09,683 TTS.utils.synthesizer INFO Processing time: 0.943
+2026-10-28 17:26:09,684 TTS.utils.synthesizer INFO Real-time factor: 0.408
+2026-10-28 17:26:09,952 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:09,953 TTS.utils.synthesizer INFO Input: ["I'll be your interviewer today for a Data Analyst role."]
+2026-10-28 17:26:12,612 TTS.utils.synthesizer INFO Processing time: 2.660
+2026-10-28 17:26:12,612 TTS.utils.synthesizer INFO Real-time factor: 0.638
+2026-10-28 17:26:12,623 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:12,624 TTS.utils.synthesizer INFO Input: ["We'll cover analytics depth, a sql and metrics case, and business case."]
+2026-10-28 17:26:15,864 TTS.utils.synthesizer INFO Processing time: 3.241
+2026-10-28 17:26:15,864 TTS.utils.synthesizer INFO Real-time factor: 0.460
+2026-10-28 17:26:15,881 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:15,882 TTS.utils.synthesizer INFO Input: ["I'll ask one question at a time, and you can ask for clarification or say when you want to skip something."]
+2026-10-28 17:26:19,402 TTS.utils.synthesizer INFO Processing time: 3.521
+2026-10-28 17:26:19,402 TTS.utils.synthesizer INFO Real-time factor: 0.459
+2026-10-28 17:26:19,420 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:19,422 TTS.utils.synthesizer INFO Input: ["I'll focus on the role and your experience; compensation is discussed only when it is included in the job"]
+2026-10-28 17:26:23,785 TTS.utils.synthesizer INFO Processing time: 4.364
+2026-10-28 17:26:23,785 TTS.utils.synthesizer INFO Real-time factor: 0.595
+2026-10-28 17:26:23,803 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:23,804 TTS.utils.synthesizer INFO Input: ['description.']
+2026-10-28 17:26:24,201 TTS.utils.synthesizer INFO Processing time: 0.399
+2026-10-28 17:26:24,202 TTS.utils.synthesizer INFO Real-time factor: 0.291
+2026-10-28 17:26:24,205 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:24,206 TTS.utils.synthesizer INFO Input: ['Can you walk me through how you approached streamlining the IoT device data pipeline and why you chose the']
+2026-10-28 17:26:27,559 TTS.utils.synthesizer INFO Processing time: 3.354
+2026-10-28 17:26:27,559 TTS.utils.synthesizer INFO Real-time factor: 0.465
+2026-10-28 17:26:27,576 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:26:27,577 TTS.utils.synthesizer INFO Input: ['specific techniques you used?']
+2026-10-28 17:26:31,746 TTS.utils.synthesizer INFO Processing time: 4.170
+2026-10-28 17:26:31,747 TTS.utils.synthesizer INFO Real-time factor: 0.483
+2026-10-28 17:27:18,257 tts_service INFO stream: 2 sentence(s), 183 chars
+2026-10-28 17:27:18,258 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:27:18,258 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:27:18,259 TTS.utils.synthesizer INFO Input: ['Can you describe how you would test whether a new feature on a website leads to higher conversion rates']
+2026-10-28 17:27:21,252 TTS.utils.synthesizer INFO Processing time: 2.994
+2026-10-28 17:27:21,252 TTS.utils.synthesizer INFO Real-time factor: 0.448
+2026-10-28 17:27:21,268 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:27:21,269 TTS.utils.synthesizer INFO Input: ['including the metric you would track and the statistical test you would apply?']
+2026-10-28 17:27:23,436 TTS.utils.synthesizer INFO Processing time: 2.167
+2026-10-28 17:27:23,436 TTS.utils.synthesizer INFO Real-time factor: 0.447
+2026-10-28 17:28:25,671 tts_service INFO stream: 8 sentence(s), 495 chars
+2026-10-28 17:28:25,671 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:28:25,672 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:28:25,672 TTS.utils.synthesizer INFO Input: ["Hi Ankit, I'm Arjun."]
+2026-10-28 17:28:26,408 TTS.utils.synthesizer INFO Processing time: 0.737
+2026-10-28 17:28:26,409 TTS.utils.synthesizer INFO Real-time factor: 0.327
+2026-10-28 17:28:26,415 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:28:26,416 TTS.utils.synthesizer INFO Input: ["I'll be your interviewer today for a Software Engineer role."]
+2026-10-28 17:28:28,516 TTS.utils.synthesizer INFO Processing time: 2.101
+2026-10-28 17:28:28,516 TTS.utils.synthesizer INFO Real-time factor: 0.449
+2026-10-28 17:28:28,527 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:28:28,528 TTS.utils.synthesizer INFO Input: ["We'll cover technical depth, a coding and algorithms, and system design."]
+2026-10-28 17:28:31,120 TTS.utils.synthesizer INFO Processing time: 2.593
+2026-10-28 17:28:31,120 TTS.utils.synthesizer INFO Real-time factor: 0.438
+2026-10-28 17:28:31,138 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:28:31,139 TTS.utils.synthesizer INFO Input: ['Can you describe the key security measures you implemented in Passman and why you chose those particular']
+2026-10-28 17:28:34,278 TTS.utils.synthesizer INFO Processing time: 3.140
+2026-10-28 17:28:34,278 TTS.utils.synthesizer INFO Real-time factor: 0.458
+2026-10-28 17:28:34,303 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:28:34,303 TTS.utils.synthesizer INFO Input: ['approaches?']
+2026-10-28 17:28:34,833 TTS.utils.synthesizer INFO Processing time: 0.530
+2026-10-28 17:28:34,833 TTS.utils.synthesizer INFO Real-time factor: 0.354
+2026-10-28 17:29:07,138 tts_service INFO stream: 2 sentence(s), 155 chars
+2026-10-28 17:29:07,138 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:29:07,138 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:29:07,139 TTS.utils.synthesizer INFO Input: ["Could you describe how Go's garbage collector works and what considerations you take into account to minimize"]
+2026-10-28 17:29:10,342 TTS.utils.synthesizer INFO Processing time: 3.204
+2026-10-28 17:29:10,342 TTS.utils.synthesizer INFO Real-time factor: 0.450
+2026-10-28 17:29:10,360 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:29:10,361 TTS.utils.synthesizer INFO Input: ['its impact on latencysensitive applications?']
+2026-10-28 17:29:12,143 TTS.utils.synthesizer INFO Processing time: 1.783
+2026-10-28 17:29:12,143 TTS.utils.synthesizer INFO Real-time factor: 0.440
+2026-10-28 17:29:31,368 tts_service INFO stream: 3 sentence(s), 180 chars
+2026-10-28 17:29:31,369 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:29:31,369 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:29:31,369 TTS.utils.synthesizer INFO Input: ['Sure, take your time.']
+2026-10-28 17:29:32,356 TTS.utils.synthesizer INFO Processing time: 0.987
+2026-10-28 17:29:32,356 TTS.utils.synthesizer INFO Real-time factor: 0.366
+2026-10-28 17:29:32,362 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:29:32,363 TTS.utils.synthesizer INFO Input: ["When you're ready, can you describe a situation where you had to debug a performance bottleneck in a Go"]
+2026-10-28 17:29:35,812 TTS.utils.synthesizer INFO Processing time: 3.450
+2026-10-28 17:29:35,812 TTS.utils.synthesizer INFO Real-time factor: 0.461
+2026-10-28 17:29:35,830 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:29:35,831 TTS.utils.synthesizer INFO Input: ['service, what steps you took, and how you resolved it?']
+2026-10-28 17:29:37,554 TTS.utils.synthesizer INFO Processing time: 1.724
+2026-10-28 17:29:37,554 TTS.utils.synthesizer INFO Real-time factor: 0.435
+2026-10-28 17:30:10,662 tts_service INFO stream: 3 sentence(s), 117 chars
+2026-10-28 17:30:10,662 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:30:10,663 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:30:10,663 TTS.utils.synthesizer INFO Input: ['Take your time.']
+2026-10-28 17:30:11,134 TTS.utils.synthesizer INFO Processing time: 0.472
+2026-10-28 17:30:11,135 TTS.utils.synthesizer INFO Real-time factor: 0.301
+2026-10-28 17:30:11,139 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:30:11,139 TTS.utils.synthesizer INFO Input: ["I haven't heard your answer yet."]
+2026-10-28 17:30:12,281 TTS.utils.synthesizer INFO Processing time: 1.142
+2026-10-28 17:30:12,281 TTS.utils.synthesizer INFO Real-time factor: 0.400
+2026-10-28 17:30:12,289 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:30:12,289 TTS.utils.synthesizer INFO Input: ['Would you like to continue with this question, or should we move on?']
+2026-10-28 17:30:14,457 TTS.utils.synthesizer INFO Processing time: 2.168
+2026-10-28 17:30:14,457 TTS.utils.synthesizer INFO Real-time factor: 0.434
+2026-10-28 17:30:36,002 tts_service INFO stream: 2 sentence(s), 190 chars
+2026-10-28 17:30:36,002 tts_service INFO "POST /tts-stream HTTP/1.1" 200 -
+2026-10-28 17:30:36,003 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:30:36,004 TTS.utils.synthesizer INFO Input: ['Design a basic photosharing service where users can upload, store, and view photos.']
+2026-10-28 17:30:39,311 TTS.utils.synthesizer INFO Processing time: 3.307
+2026-10-28 17:30:39,311 TTS.utils.synthesizer INFO Real-time factor: 0.457
+2026-10-28 17:30:39,328 TTS.utils.synthesizer INFO Splitting into sentences (language: en-us).
+2026-10-28 17:30:39,329 TTS.utils.synthesizer INFO Input: ['Please describe, in your own words, the main components, data flow, and any key decisions you would make.']
+2026-10-28 17:30:43,530 TTS.utils.synthesizer INFO Processing time: 4.202
+2026-10-28 17:30:43,530 TTS.utils.synthesizer INFO Real-time factor: 0.462

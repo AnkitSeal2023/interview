@@ -43,7 +43,7 @@ export default function UserMenu() {
 
   if (!user) {
     return (
-      <Button asChild variant="outline" size="sm" className="border-neutral-600">
+      <Button asChild variant="outline" size="sm">
         <a href="/login">Sign in</a>
       </Button>
     );
@@ -60,7 +60,7 @@ export default function UserMenu() {
   return (
     <div ref={ref} className="relative">
       <button
-        className="flex size-9 items-center justify-center rounded-full border border-neutral-600 bg-neutral-800 text-xs font-semibold text-neutral-100 hover:border-neutral-300"
+        className="flex size-8 items-center justify-center rounded-full bg-[#1d1d1d] text-xs font-semibold text-foreground hover:bg-[#2a2a2a]"
         onClick={() => setOpen((v) => !v)}
         aria-label="Open profile menu"
         aria-expanded={open}
@@ -68,27 +68,27 @@ export default function UserMenu() {
         {initials}
       </button>
       {open && (
-        <div className="absolute right-0 mt-2 w-60 rounded-md border border-border bg-popover p-2 text-sm shadow-xl">
-          <div className="border-b border-border/70 px-2 pb-2">
-            <p className="truncate font-medium text-neutral-100">{displayName}</p>
-            <p className="truncate pt-0.5 text-xs text-neutral-500">{user.email}</p>
+        <div className="absolute right-0 mt-2 w-60 rounded-[14px] bg-[#161616] p-2 text-sm shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
+          <div className="border-b border-[#222222] px-2 pb-2">
+            <p className="truncate font-medium">{displayName}</p>
+            <p className="truncate pt-0.5 text-xs text-[#949494]">{user.email}</p>
           </div>
           <div className="py-1">
-            <Link className="block rounded px-2 py-1.5 hover:bg-neutral-800" href="/">
+            <Link className="block rounded-lg px-2 py-1.5 text-muted-foreground hover:bg-[#222222] hover:text-foreground" href="/">
               New interview
             </Link>
-            <Link className="block rounded px-2 py-1.5 hover:bg-neutral-800" href="/reports">
+            <Link className="block rounded-lg px-2 py-1.5 text-muted-foreground hover:bg-[#222222] hover:text-foreground" href="/reports">
               My sessions
             </Link>
           </div>
           <button
-            className="w-full rounded px-2 py-1.5 text-left hover:bg-neutral-800"
+            className="w-full rounded-lg px-2 py-1.5 text-left text-muted-foreground hover:bg-[#222222] hover:text-foreground"
             onClick={logout}
           >
             Sign out
           </button>
           <button
-            className="w-full rounded px-2 py-1.5 text-left text-red-300 hover:bg-red-950/40"
+            className="w-full rounded-lg px-2 py-1.5 text-left text-negative hover:bg-[#222222]"
             onClick={deleteData}
           >
             Delete all my data

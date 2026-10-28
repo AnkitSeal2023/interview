@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # ─────────────────────────────────────────────────────────────────────────────
 # SWE Mock Interview — Docker Compose launcher (plug & play, Ubuntu/Debian/Arch)
@@ -289,10 +290,10 @@ fi
 
 # ── 7. build + launch ─────────────────────────────────────────────────────────
 hdr "building images (cached after the first run)"
-dcp build ${PROFILE_ARGS[@]+"${PROFILE_ARGS[@]}"}
+dcp "${PROFILE_ARGS[@]}" build
 
 say "starting containers"
-dcp up -d ${PROFILE_ARGS[@]+"${PROFILE_ARGS[@]}"}
+dcp "${PROFILE_ARGS[@]}" up -d
 PROFILE_HINT=""
 [[ $WANT_TTS == true ]] && PROFILE_HINT=" (voice profile on)"
 
@@ -308,11 +309,11 @@ else
   warn "frontend did not answer — logs: ./scripts/compose.sh logs frontend"
 fi
 if [[ $WANT_TTS == true ]]; then
-  TTS_STATE="$(dcp ps tts 2>/dev/null | tail -n 1 | awk '{print $NF}' || true)"
-  case "$TTS_STATE" in
-    *healthy*|*running*) printf "  tts      internal  ${grn}up${rst} (first synthesis may load the ~110 MB voice model)\n" ;;
-    *) warn "tts container not running yet — browser voice fallback applies; check: ./scripts/compose.sh logs tts" ;;
-  esac
+  if [[ -n "$(dcp ps --status running -q tts 2>/dev/null || true)" ]]; then
+    printf "  tts      internal  ${grn}up${rst} (first synthesis may load the ~110 MB voice model)\n"
+  else
+    warn "tts container not running yet — browser voice fallback applies; check: ./scripts/compose.sh logs tts"
+  fi
 fi
 
 echo

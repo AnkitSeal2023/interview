@@ -90,16 +90,23 @@ faster-whisper STT model (~150 MB) downloads once into a named docker volume.
 | `./scripts/compose.sh status` | show which services are running |
 | `./scripts/compose.sh stop` | stop containers, **data is kept** |
 | `./scripts/compose.sh down` | remove containers, data volumes still kept |
+| `./scripts/cleanup.sh` | remove this project's containers and Docker images, keep data volumes |
+| `./scripts/cleanup.sh --volumes` | remove containers, images, and persistent data volumes |
 | `./scripts/compose.sh logs frontend` | tail any service's logs (`backend`, `frontend`, `db`, `tts`) |
 | `./scripts/compose.sh stop && ./scripts/compose.sh` | restart everything |
 
-Data lives in docker volumes (Postgres DB, whisper models, TTS cache); nothing on the
-host except the project folder and `.env`. To **wipe everything** (containers + data +
-secrets) and start clean:
+Data lives in Docker volumes (Postgres DB, whisper models, TTS cache); nothing on the
+host except the project folder and `.env`. To remove the project's containers and images
+while keeping data volumes:
 
 ```bash
-./scripts/compose.sh down
-docker volume rm interview_pgdata interview_stt-models interview_tts-cache
+./scripts/cleanup.sh
+```
+
+To also remove all persistent Docker data, then start clean:
+
+```bash
+./scripts/cleanup.sh --volumes
 rm .env        # next run will re-ask for the Groq key and mint fresh secrets
 ```
 

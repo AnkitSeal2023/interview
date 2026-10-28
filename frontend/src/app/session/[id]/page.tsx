@@ -8,7 +8,7 @@ export default async function Page({
 }) {
   const { id } = await params;
   return (
-    <Suspense fallback={<p className="text-neutral-500">Loading session…</p>}>
+    <Suspense fallback={<p className="text-muted-foreground">Loading session…</p>}>
       <InterviewClient sid={id} />
     </Suspense>
   );

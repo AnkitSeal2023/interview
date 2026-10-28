@@ -668,94 +668,87 @@ export function InterviewClient({ sid }: { sid: string }) {
 		session?.status === "in_progress" || session?.status === "paused";
 
 	return (
-		<div className="w-full interview-screen flex flex-col">
-			<div className="flex items-center justify-between gap-3 border-b border-border bg-background/95 px-1 py-3">
-				<div className="flex min-w-0 items-center gap-3">
+		<div className="interview-screen flex w-full flex-col">
+			<div className="flex items-center justify-between gap-3 border-b border-[#1a1a1a] px-1 py-3">
+				<div className="flex w-full min-w-0 items-center gap-2.5">
 					<Button
-						size="sm"
-						variant="outline"
+						variant="ghost"
+						size="icon-sm"
 						disabled={busy}
+						aria-label="Home"
+						title="Home"
 						onClick={() => router.push("/")}
 					>
-						<Home></Home>
+						<Home size={16} />
 					</Button>
 					{interviewOpen && round?.current && (
-						<>
-							<Button
-								size="sm"
-								variant="outline"
-								disabled={busy}
-								onClick={() => void togglePause()}
-								aria-label={
-									session?.status === "paused"
-										? "Resume interview"
-										: "Pause interview"
-								}
-								title={
-									session?.status === "paused"
-										? "Resume interview"
-										: "Pause interview"
-								}
-							>
-								<PlayPauseIcon paused={session?.status === "paused"} />
-							</Button>
-						</>
+						<Button
+							variant="ghost"
+							size="icon-sm"
+							disabled={busy}
+							aria-pressed={session?.status === "paused"}
+							onClick={() => void togglePause()}
+							aria-label={
+								session?.status === "paused"
+									? "Resume interview"
+									: "Pause interview"
+							}
+							title={
+								session?.status === "paused"
+									? "Resume interview"
+									: "Pause interview"
+							}
+						>
+							<PlayPauseIcon paused={session?.status === "paused"} />
+						</Button>
 					)}
 
-					<div className="pt-2 text-xs">
+					<div className="min-w-0 text-[13px]">
 						{round && !round.current ? (
-							<span className="block truncate whitespace-nowrap text-neutral-500">
-								previous round · read only
-							</span>
+							<span className="block truncate text-[#949494]">previous round · read only</span>
 						) : session?.status === "paused" ? (
-							<span className="block truncate whitespace-nowrap text-amber-300">
-								interview paused
-							</span>
+							<span className="pill pill-warning">paused — clock stopped</span>
 						) : round?.status !== "active" ? (
-							<span className="block truncate whitespace-nowrap text-neutral-500">
-								round finished
-							</span>
+							<span className="block truncate text-[#949494]">round finished</span>
 						) : left !== null ? (
 							<span
 								className={
-									"mt-1 flex items-center justify-between rounded-lg border px-3 py-2 font-mono text-lg font-semibold tracking-wider " +
+									"num inline-flex min-w-24 items-center justify-end rounded-full px-3 py-1 font-mono text-[15px] font-semibold " +
 									(left <= 150
-										? "border-red-500/60 bg-red-950/50 text-red-300"
-										: "border-sky-500/40 bg-sky-950/40 text-sky-200")
+										? "bg-negative-bg text-negative"
+										: "bg-[#0c1c2a] text-data")
 								}
 							>
-								<span>
-									⏳ {String(Math.floor(left / 60)).padStart(2, "0")}:
-									{String(left % 60).padStart(2, "0")}
-								</span>
+								{String(Math.floor(left / 60)).padStart(2, "0")}:
+								{String(left % 60).padStart(2, "0")}
 							</span>
 						) : (
-							<span className="text-neutral-500">
-								budget: {round?.time_budget_min} min
-							</span>
+							<span className="num text-[#949494]">budget: {round?.time_budget_min} min</span>
 						)}
 					</div>
+					{interviewOpen && (
+						<div className="pointer-events-auto ml-auto flex shrink-0 items-center gap-2.5">
+							{stageName && (
+								<span className="hidden text-[13px] text-muted-foreground sm:inline">{stageName}</span>
+							)}
+							<Button
+								variant="destructive"
+								size="sm"
+								disabled={busy}
+								onClick={() => setEndOpen(true)}
+							>
+								End interview
+							</Button>
+						</div>
+					)}
 				</div>
-				{interviewOpen && (
-				<div className="flex shrink-0 gap-2">
-					<Button
-						size="sm"
-						variant="outline"
-						className="border-red-900/70 text-red-300 hover:bg-red-950/40"
-						disabled={busy}
-						onClick={() => setEndOpen(true)}
-					>
-						End Interview
-					</Button>
-				</div>
-			)}
 			</div>
 			<div className="grid gap-5 ">
 				{/* live chat + editor */}
 
 				{showInterviewWorkspace ? (
 					<div>
-						<Card className="flex min-h-[560px] flex-col hairline-panel">
+						<Card className="flex min-h-[560px] flex-col">
 							<CardHeader className="pb-2">
 								<CardTitle className="text-sm">
 									{stageName} · interviewer
@@ -763,9 +756,9 @@ export function InterviewClient({ sid }: { sid: string }) {
 							</CardHeader>
 							<CardContent className="flex grow flex-col gap-3">
 								{session?.status === "paused" && (
-									<p className="rounded-md border border-amber-800/60 bg-amber-950/30 px-3 py-2 text-xs text-amber-200">
-										Interview paused — the clock is stopped. Resume it from the
-										button in the header.
+									<p className="rounded-[10px] bg-warning-bg px-3 py-2 text-[13px] text-warning">
+										Interview paused — the clock is stopped. Resume it from
+										the button in the header.
 									</p>
 								)}
 								<div
@@ -799,13 +792,13 @@ export function InterviewClient({ sid }: { sid: string }) {
 									<InterviewerActivity voiceState={voiceState} />
 								)}
 									{round?.idle_nudge && (
-										<p className="rounded-md border border-amber-800/60 bg-amber-950/30 px-3 py-2 text-xs text-amber-200">
+										<p className="rounded-[10px] bg-warning-bg px-3 py-2 text-[13px] text-warning">
 											{round.idle_nudge.text}
 										</p>
 									)}
 								</div>
 								{err && (
-									<p className="rounded-md bg-red-950/50 px-3 py-2 text-sm text-red-300">
+									<p className="rounded-[10px] bg-negative-bg px-3 py-2 text-[13px] text-negative">
 										{err}
 									</p>
 								)}
@@ -817,11 +810,11 @@ export function InterviewClient({ sid }: { sid: string }) {
 									}}
 								>
 									{inputMode === "voice" ? (
-										<div className="rounded-xl border border-sky-800/80 bg-sky-950/25 p-4">
-											<div className="mb-3 flex items-start justify-between gap-3">
+										<div className="rounded-[20px] bg-[#1a1a1a] p-4">
+											<div className="mb-3 flex items-start justify-end gap-3">
 												<button
 													type="button"
-													className="text-xs text-neutral-400 underline underline-offset-4 hover:text-neutral-100"
+													className="text-[13px] text-muted-foreground underline underline-offset-4 hover:text-foreground"
 													onClick={() => switchInputMode("text")}
 												>
 													Type instead
@@ -832,22 +825,25 @@ export function InterviewClient({ sid }: { sid: string }) {
 													<>
 														<Button
 															className="min-h-14"
+															size="lg"
 															type="button"
 															onClick={() => finishSend()}
 															disabled={busy}
 														>
-															Done
+															Done — send it
 														</Button>
 														<Button
-															className="min-h-14 border-red-400/80 text-red-300 hover:bg-red-950/40"
-															variant="outline"
+															className="min-h-14"
+															variant="destructive"
+															size="lg"
 															type="button"
 															onClick={() => stt.stop(true)}
 															disabled={busy}
 														>
 															Stop recording
 														</Button>
-														<span className="text-xs text-neutral-400">
+														<span className="flex items-center gap-2 text-[13px] text-data" role="status">
+															<span className="inline-block size-2 animate-pulse rounded-full bg-data" aria-hidden="true" />
 															Listening…
 														</span>
 													</>
@@ -856,10 +852,10 @@ export function InterviewClient({ sid }: { sid: string }) {
 														<button
 															type="button"
 															className={
-																"flex min-h-14 items-center gap-3 rounded-lg border px-4 py-3 text-sm font-medium transition-colors " +
+																"flex min-h-14 items-center gap-3 rounded-full px-6 text-sm font-medium transition-colors " +
 																(stt.state === "transcribing"
-																	? "border-neutral-700 bg-neutral-900 text-neutral-300"
-																	: "border-sky-500/70 bg-sky-900/50 text-sky-50 hover:bg-sky-900")
+																	? "bg-[#222222] text-muted-foreground"
+																	: "bg-[#2a2a2a] text-foreground hover:bg-[#333333] disabled:opacity-50")
 															}
 															onClick={() => startStt()}
 															disabled={
@@ -877,27 +873,25 @@ export function InterviewClient({ sid }: { sid: string }) {
 																	: "Start speaking"}
 															</span>
 														</button>
-														<span className="text-xs text-neutral-400">
-															Click on the mic to start speaking. While recording, choose Done to send
-															your answer, or Stop recording to discard it and start over.
+														<span className="text-[13px] text-muted-foreground">
+															Click the mic to answer by voice. While recording, Done
+															sends your answer; Stop recording discards it and starts over.
 														</span>
 													</>
 												)}
 											</div>
 										</div>
 									) : openerRecoveryNeeded ? (
-										<Card className="flex min-h-[560px] flex-col hairline-panel">
-											<CardHeader>
-												<CardTitle className="text-sm">
-													Interviewer is unavailable
-												</CardTitle>
-											</CardHeader>
-											<CardContent className="flex grow flex-col items-center justify-center gap-3 text-center">
-												<p className="max-w-md text-sm text-neutral-400">
-													The opening question could not be generated. This is usually temporary.
+										<div className="rounded-[20px] bg-[#1a1a1a] p-6">
+											<div className="flex grow flex-col items-center justify-center gap-3 text-center">
+												<p className="text-sm font-medium">
+													The interviewer could not open
+												</p>
+												<p className="max-w-md text-[13px] text-muted-foreground">
+													The opening question could not be generated. This is usually temporary — retrying is safe.
 												</p>
 												{err && (
-													<p className="max-w-md text-sm text-red-300">{err}</p>
+													<p className="max-w-md rounded-[10px] bg-negative-bg px-3 py-2 text-[13px] text-negative">{err}</p>
 												)}
 												<Button
 													onClick={async () => {
@@ -917,17 +911,17 @@ export function InterviewClient({ sid }: { sid: string }) {
 												>
 													{busy ? "Trying again…" : "Try again"}
 												</Button>
-											</CardContent>
-										</Card>
+											</div>
+										</div>
 									) : (
 										<div>
 											<div className="mb-2 flex items-center justify-between">
-												<span className="text-sm font-medium text-neutral-200">
+												<span className="text-sm font-medium text-foreground">
 													Type your answer
 												</span>
 												<button
 													type="button"
-													className="text-xs text-sky-300 underline underline-offset-4 hover:text-sky-100"
+													className="text-[13px] text-muted-foreground underline underline-offset-4 hover:text-foreground"
 													onClick={() => switchInputMode("voice")}
 												>
 													Use voice
@@ -988,21 +982,21 @@ export function InterviewClient({ sid }: { sid: string }) {
 						</CardHeader>
 						<CardContent className="flex grow flex-col gap-4">
 							{initializing && !round ? (
-								<p className="flex grow items-center justify-center gap-2 text-sm text-neutral-500" role="status">
+								<p className="flex grow items-center justify-center gap-2 text-sm text-muted-foreground" role="status">
 									<Spinner /> Loading interview…
 								</p>
 							) : (
 								<>
-							<div className="flex items-start justify-between gap-4 rounded-lg border border-neutral-800 bg-neutral-900/60 px-3 py-2">
+							<div className="flex items-start justify-between gap-4 rounded-[14px] bg-[#181818] px-4 py-3">
 								<div>
-									<p className="text-sm font-medium text-neutral-200">
+									<p className="text-sm font-medium">
 										{session?.status === "aborted"
 											? "Interview exited"
 											: round?.status === "completed"
 												? "Round complete"
 												: "Interview complete"}
 									</p>
-									<p className="mt-1 text-xs text-neutral-500">
+									<p className="mt-1 text-[13px] text-muted-foreground">
 										Read-only transcript. New responses are disabled.
 									</p>
 									{!finalReport &&
@@ -1020,7 +1014,7 @@ export function InterviewClient({ sid }: { sid: string }) {
 										)}
 								</div>
 								{err && (
-									<p className="rounded-md bg-red-950/50 px-3 py-2 text-sm text-red-300">
+									<p className="rounded-[10px] bg-negative-bg px-3 py-2 text-[13px] text-negative">
 										{err}
 									</p>
 								)}
@@ -1038,7 +1032,7 @@ export function InterviewClient({ sid }: { sid: string }) {
 									))}
 								</div>
 							) : (
-								<p className="flex grow items-center justify-center text-sm text-neutral-500">
+								<p className="flex grow items-center justify-center text-sm text-muted-foreground">
 									No conversation was saved for this round.
 								</p>
 							)}
@@ -1050,9 +1044,9 @@ export function InterviewClient({ sid }: { sid: string }) {
 			</div>
 			{nextRoundReady && (
 				<Modal titleId="next-stage-title" title="Stage complete">
-					<p className="mt-2 text-sm text-neutral-400">
+					<p className="mt-2 text-sm text-muted-foreground">
 						Your {stageName} responses have been saved. Continue to{" "}
-						<span className="text-neutral-200">
+						<span className="text-foreground">
 							{nextStageName ?? "the next stage"}
 						</span>{" "}
 						now, or come back and take it later.
@@ -1070,7 +1064,7 @@ export function InterviewClient({ sid }: { sid: string }) {
 			)}
 			{endOpen && (
 				<Modal titleId="end-interview-title" title="End this interview?">
-					<p className="mt-2 text-sm text-neutral-400">
+					<p className="mt-2 text-sm text-muted-foreground">
 						End the interview completely, or close the current stage and skip
 						ahead to the next one. Everything answered so far stays in your
 						report either way.
@@ -1095,8 +1089,7 @@ export function InterviewClient({ sid }: { sid: string }) {
 							{busy ? "Closing stage…" : "Skip to next stage"}
 						</Button>
 						<Button
-							variant="outline"
-							className="border-red-900/70 text-red-300 hover:bg-red-950/40"
+							variant="destructive"
 							disabled={busy}
 							onClick={() => {
 								setEndOpen(false);
@@ -1111,7 +1104,7 @@ export function InterviewClient({ sid }: { sid: string }) {
 			)}
 			{toast && (
 				<div
-					className="fixed inset-x-4 top-4 z-50 mx-auto w-fit max-w-[calc(100vw-2rem)] rounded-lg border border-sky-800/80 bg-neutral-950 px-4 py-2 text-sm text-sky-100 shadow-xl"
+					className="fixed inset-x-4 top-4 z-50 mx-auto w-fit max-w-[calc(100vw-2rem)] rounded-full border border-[#2a2a2a] bg-[#161616] px-4 py-2 text-sm text-foreground shadow-[0_12px_28px_rgba(0,0,0,0.45)]"
 					role="status"
 					aria-live="polite"
 				>
@@ -1134,13 +1127,13 @@ function Modal({
 }) {
 	return (
 		<div
-			className="fixed inset-0 z-40 flex items-center justify-center bg-black/65 px-4"
+			className="fixed inset-0 z-40 flex items-center justify-center bg-black/70 px-4"
 			role="dialog"
 			aria-modal="true"
 			aria-labelledby={titleId}
 		>
-			<div className="w-full max-w-md rounded-xl border border-border bg-popover p-5 shadow-2xl">
-				<h2 id={titleId} className="text-base font-semibold text-neutral-100">
+			<div className="w-full max-w-md rounded-[20px] bg-[#161616] p-6 shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
+				<h2 id={titleId} className="text-lg font-semibold text-foreground">
 					{title}
 				</h2>
 				{children}
@@ -1160,28 +1153,28 @@ function PendingMsgRow({
 	onDismiss: () => void;
 }) {
 	return (
-		<div className="ml-auto max-w-[85%] rounded-xl border border-emerald-900/60 bg-emerald-950/40 px-4 py-3">
+		<div className="ml-auto max-w-[85%] rounded-[14px] bg-[#2a2a2a] px-4 py-3">
 			<p className="whitespace-pre-wrap text-sm">{m.text}</p>
 			<p className="flex items-center justify-end gap-3 pt-1 text-xs">
 				{m.status === "sending" && (
-					<span className="animate-pulse text-neutral-500">sending…</span>
+					<span className="animate-pulse text-[#949494]">sending…</span>
 				)}
 				{m.status === "sent" && (
-					<span className="text-emerald-400">sent ✓</span>
+					<span className="text-positive">sent</span>
 				)}
 				{m.status === "failed" && (
 					<>
-						<span className="text-red-400">failed</span>
+						<span className="text-negative">failed</span>
 						<button
 							type="button"
-							className="underline underline-offset-4 hover:text-neutral-200"
+							className="underline underline-offset-4 hover:text-foreground"
 							onClick={onRetry}
 						>
 							retry
 						</button>
 						<button
 							type="button"
-							className="underline underline-offset-4 hover:text-neutral-200"
+							className="underline underline-offset-4 hover:text-foreground"
 							onClick={onDismiss}
 						>
 							dismiss
@@ -1196,22 +1189,22 @@ function PendingMsgRow({
 function TellRow({ t, speakOverride }: { t: Tell; speakOverride?: string }) {
 	if (t.who === "q")
 		return (
-			<div className="max-w-[85%] rounded-xl border border-border bg-neutral-900 px-4 py-3">
+			<div className="max-w-[85%] rounded-[14px] bg-[#1c1c1c] px-4 py-3">
 				{speakOverride === "" ? ( // audio starting: keep the words hidden until spoken
-					<p className="text-sm text-neutral-500">🎙 …</p>
+					<p className="text-sm text-[#949494]">… spoken aloud as it is written</p>
 				) : (
 					<pre className="whitespace-pre-wrap font-sans text-sm">
 						{speakOverride ?? t.text}
 					</pre>
 				)}
-				{t.meta && <p className="pt-1 text-xs text-neutral-500">{t.meta}</p>}
+				{t.meta && <p className="pt-1 text-xs text-[#949494]">{t.meta}</p>}
 			</div>
 		);
 	return (
-		<div className="ml-auto max-w-[85%] rounded-xl border border-emerald-900/60 bg-emerald-950/40 px-4 py-3">
+		<div className="ml-auto max-w-[85%] rounded-[14px] bg-[#2a2a2a] px-4 py-3">
 			<p className="whitespace-pre-wrap text-sm">{t.text}</p>
 			{t.meta && (
-				<p className="pt-1 text-right text-xs text-neutral-500">{t.meta}</p>
+				<p className="pt-1 text-right text-xs text-[#949494]">{t.meta}</p>
 			)}
 		</div>
 	);
@@ -1268,7 +1261,7 @@ function InterviewerActivity({ voiceState }: { voiceState: VoiceState }) {
 
 	return (
 		<div
-			className="flex w-fit items-center gap-2 rounded-xl border border-sky-900/70 bg-sky-950/25 px-3 py-2 text-xs text-sky-200"
+			className="flex w-fit items-center gap-2 rounded-full bg-[#1c1c1c] px-3.5 py-2 text-[13px] text-muted-foreground"
 			role="status"
 			aria-live="polite"
 			aria-label={`${label}. More of the interviewer response may follow.`}
@@ -1292,11 +1285,26 @@ function FinalSummary({
 }) {
 	const overall = typeof rep.overall === "number" ? rep.overall : null;
 	return (
-		<div className="rounded-lg border border-border bg-neutral-900 p-4 text-sm">
-			<p className="font-medium">
-				Interview complete — overall {overall == null ? "–" : overall}/10
+		<div className="rounded-[14px] bg-[#181818] p-4 text-sm">
+			<p className="font-medium">Interview complete</p>
+			<p className="mt-1 text-muted-foreground">
+				Overall{" "}
+				<span
+					className={
+						"num font-medium " +
+						(overall == null
+							? "text-[#949494]"
+							: overall >= 6
+								? "text-positive"
+								: overall >= 4
+									? "text-warning"
+									: "text-negative")
+					}
+				>
+					{overall == null ? "—" : `${overall}/10`}
+				</span>
 			</p>
-			<Button className="mt-2" size="sm" onClick={onOpen}>
+			<Button className="mt-3" size="sm" onClick={onOpen}>
 				View full report
 			</Button>
 		</div>

@@ -60,60 +60,131 @@ export default function ReportPage() {
   }, [sid]);
 
   return (
-    <div className="space-y-5">
-      {err && <p className="text-sm text-red-300">{err}</p>}
+    <div className="pt-6">
+      {err && (
+        <p className="rounded-[10px] bg-negative-bg px-3 py-2 text-sm text-negative">{err}</p>
+      )}
       {loading && (
-        <p className="flex items-center gap-2 text-sm text-neutral-500" role="status">
+        <p className="flex items-center gap-2 text-sm text-muted-foreground" role="status">
           <Spinner /> Loading report…
         </p>
       )}
-      {final && (
-        <FinalView rep={final} onRegenerate={regenerateFinal} regenBusy={regenBusy} />
-      )}
+      {final && <FinalView rep={final} onRegenerate={regenerateFinal} regenBusy={regenBusy} />}
       {Object.entries(roundReps).map(([rid, rep]) => (
-        <div key={rid} className="hairline-panel rounded-lg border border-border bg-card p-4">
-          <h2 className="font-semibold">Round report</h2>
-          <p className="score font-mono">{rep.overall ?? "–"}/10</p>
-          <CompTable comps={rep.competencies} />
-          <TwoCol a={rep.strengths} aTitle="Strengths" b={rep.weaknesses} bTitle="Weaknesses" />
-          {rep.misconceptions?.length ? (
-            <p className="text-sm text-amber-300">Misconceptions: {rep.misconceptions.map(displayText).join(" · ")}</p>
-          ) : null}
-          <StudyList topics={rep.study_topics} />
-          {rep.confidence_note && <p className="text-xs text-neutral-500">{rep.confidence_note}</p>}
-        </div>
+        <RoundReport key={rid} rid={rid} rep={rep} />
       ))}
     </div>
   );
 }
 
+function Score({ value, size = "lg" }: { value: number | null; size?: "lg" | "md" }) {
+  const v = value ?? 0;
+  const tone =
+    value == null
+      ? "text-[#949494]"
+      : v >= 6
+        ? "text-positive"
+        : v >= 4
+          ? "text-warning"
+          : "text-negative";
+  return (
+    <span
+      className={
+        "num font-medium " +
+        tone +
+        " " +
+        (size === "lg" ? "text-[32px] leading-none" : "text-xl")
+      }
+    >
+      {value == null ? "—" : v}
+      <span className="text-sm font-normal text-[#949494]"> /10</span>
+    </span>
+  );
+}
+
 function FinalView({ rep, onRegenerate, regenBusy }: { rep: FinalRep; onRegenerate?: () => void | Promise<void>; regenBusy?: boolean }) {
   return (
-    <div className="hairline-panel rounded-lg border border-border bg-card p-5">
-      <div className="flex items-baseline justify-between">
-        <h1 className="text-lg font-semibold">Final report</h1>
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            className="text-xs text-neutral-400 underline underline-offset-4 hover:text-neutral-100"
-            onClick={() => void onRegenerate?.()}
-            disabled={regenBusy}
-          >
-            {regenBusy ? <span className="inline-flex items-center gap-1"><Spinner /> Regenerating…</span> : "Regenerate"}
-          </button>
-          <span className={"score font-mono " + ((rep.overall ?? 0) >= 6 ? "text-emerald-400" : (rep.overall ?? 0) >= 4 ? "text-amber-300" : "text-red-400")}>
-            {rep.overall ?? "–"}/10
-          </span>
+    <section>
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">Final report</h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Stages: {rep.rounds.join(" · ") || "none recorded"}
+          </p>
         </div>
+        <button
+          type="button"
+          className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+          onClick={() => void onRegenerate?.()}
+          disabled={regenBusy}
+        >
+          {regenBusy ? (
+            <span className="inline-flex items-center gap-1.5"><Spinner /> Regenerating…</span>
+          ) : (
+            "Regenerate"
+          )}
+        </button>
       </div>
-      <p className="text-xs text-neutral-500">rounds: {rep.rounds.join(" · ") || "none"}</p>
-      <CompTable comps={rep.competencies} />
-      {rep.code_evidence && rep.code_evidence.tests_total > 0 && (
-        <p className="text-sm text-neutral-300">
-          Coding: {rep.code_evidence.tests_passed}/{rep.code_evidence.tests_total} hidden tests passed (deterministic)
-        </p>
-      )}
+
+      <div className="mt-4 flex items-center gap-6 rounded-[20px] bg-card p-6">
+        <div>
+          <p className="text-sm text-muted-foreground">Overall</p>
+          <div className="mt-1"><Score value={rep.overall} /></div>
+        </div>
+        <div className="hidden h-16 w-px bg-[#1d1d1d] sm:block" aria-hidden="true" />
+        {rep.code_evidence && rep.code_evidence.tests_total > 0 && (
+          <div>
+            <p className="text-sm text-muted-foreground">Hidden tests passed</p>
+            <p className="num mt-1 text-xl">
+              {rep.code_evidence.tests_passed}
+              <span className="text-sm text-[#949494]"> /{rep.code_evidence.tests_total}</span>
+              <span className="ml-2 text-[13px] font-normal text-muted-foreground">deterministic</span>
+            </p>
+          </div>
+        )}
+      </div>
+
+      {rep.competencies?.length ? (
+        <Section title="Competencies">
+          <CompTable comps={rep.competencies} />
+        </Section>
+      ) : null}
+
       {rep.salary && <Salary est={rep.salary} />}
+    </section>
+  );
+}
+
+function RoundReport({ rid, rep }: { rid: string; rep: RoundRep }) {
+  return (
+    <section className="mt-6 rounded-[20px] bg-card p-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="text-lg font-semibold">Stage report</h2>
+        <Score value={rep.overall} size="md" />
+      </div>
+      <p className="mt-0.5 text-[13px] text-muted-foreground">
+        <span className="font-mono">{rid.slice(0, 8)}</span>
+      </p>
+      <CompTable comps={rep.competencies} />
+      <TwoCol a={rep.strengths} aTitle="Strengths" b={rep.weaknesses} bTitle="Weaknesses" />
+      {rep.misconceptions?.length ? (
+        <p className="mt-2 rounded-[10px] bg-warning-bg px-3 py-2 text-sm text-warning">
+          Misconceptions — {rep.misconceptions.map(displayText).join(" · ")}
+        </p>
+      ) : null}
+      <StudyList topics={rep.study_topics} />
+      {rep.confidence_note && (
+        <p className="mt-2 text-[13px] text-muted-foreground">{rep.confidence_note}</p>
+      )}
+    </section>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="mt-6">
+      <h2 className="text-base font-semibold">{title}</h2>
+      <div className="mt-2">{children}</div>
     </div>
   );
 }
@@ -121,19 +192,33 @@ function FinalView({ rep, onRegenerate, regenBusy }: { rep: FinalRep; onRegenera
 function CompTable({ comps }: { comps?: Comp[] }) {
   if (!comps?.length) return null;
   return (
-    <table className="my-3 w-full text-sm">
+    <table className="w-full text-sm">
       <thead>
-        <tr className="text-left text-neutral-500">
-          <th className="py-1">Competency</th><th>Score</th><th>Confidence</th><th>Evidence</th>
+        <tr className="text-xs font-normal text-muted-foreground">
+          <th className="py-1.5 text-left font-normal">Competency</th>
+          <th className="py-1.5 text-right font-normal">Score</th>
+          <th className="py-1.5 pl-4 text-left font-normal">Confidence</th>
+          <th className="hidden py-1.5 pl-4 text-left font-normal md:table-cell">Evidence</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="align-top">
         {comps.map((c) => (
-          <tr key={c.name} className="border-t border-neutral-800">
-            <td className="py-1.5">{c.name}</td>
-            <td className="font-mono">{c.score ?? "n/t"}</td>
-            <td className="text-neutral-400">{c.confidence ?? ""}</td>
-            <td className="text-neutral-500">{displayText(c.evidence).slice(0, 90)}</td>
+          <tr key={c.name} className="border-t border-[#1d1d1d]">
+            <td className="py-2.5">{c.name}</td>
+            <td className="py-2.5 text-right num">
+              {c.score == null ? (
+                <span className="text-[#949494]">—</span>
+              ) : (
+                <>
+                  {c.score}
+                  <span className="text-xs text-[#949494]"> /10</span>
+                </>
+              )}
+            </td>
+            <td className="py-2.5 pl-4 text-muted-foreground">{c.confidence ?? "—"}</td>
+            <td className="hidden max-w-[28rem] py-2.5 pl-4 text-[13px] text-muted-foreground md:table-cell">
+              {displayText(c.evidence)}
+            </td>
           </tr>
         ))}
       </tbody>
@@ -153,18 +238,27 @@ function displayText(value: unknown): string {
 }
 
 function TwoCol({ a, aTitle, b, bTitle }: { a?: LooseText[]; aTitle: string; b?: LooseText[]; bTitle: string }) {
+  const hasA = (a ?? []).length > 0;
+  const hasB = (b ?? []).length > 0;
+  if (!hasA && !hasB) return null;
   return (
-    <div className="my-2 grid gap-4 text-sm md:grid-cols-2">
-      <div>
-        <p className="font-medium text-emerald-300">{aTitle}</p>
-        <ul className="list-disc pl-5 text-neutral-300">
-          {(a ?? []).map((x, i) => <li key={i}>{displayText(x)}</li>)}
+    <div className="mt-6 grid gap-[14px] md:grid-cols-2">
+      <div className="rounded-[14px] bg-[#181818] p-4">
+        <p className="text-sm font-medium">{aTitle}</p>
+        <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
+          {(a ?? []).map((x, i) => (
+            <li key={i}>{displayText(x) || <span className="text-[#949494]">—</span>}</li>
+          ))}
+          {!hasA && <li><span className="text-[#949494]">—</span></li>}
         </ul>
       </div>
-      <div>
-        <p className="font-medium text-red-300">{bTitle}</p>
-        <ul className="list-disc pl-5 text-neutral-300">
-          {(b ?? []).map((x, i) => <li key={i}>{displayText(x)}</li>)}
+      <div className="rounded-[14px] bg-[#181818] p-4">
+        <p className="text-sm font-medium">{bTitle}</p>
+        <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground">
+          {(b ?? []).map((x, i) => (
+            <li key={i}>{displayText(x) || <span className="text-[#949494]">—</span>}</li>
+          ))}
+          {!hasB && <li><span className="text-[#949494]">—</span></li>}
         </ul>
       </div>
     </div>
@@ -173,18 +267,20 @@ function TwoCol({ a, aTitle, b, bTitle }: { a?: LooseText[]; aTitle: string; b?:
 
 function StudyList({ topics }: { topics?: { topic: string; priority: string; exercise?: string }[] }) {
   if (!topics?.length) return null;
-  const color = (p: string) => p === "high" ? "text-red-300" : p === "low" ? "text-neutral-500" : "text-amber-300";
+  const pill = (p: string) =>
+    p === "high" ? "pill pill-negative" : p === "low" ? "pill pill-neutral" : "pill pill-warning";
   return (
-    <div className="my-2 text-sm">
-      <p className="font-medium">Prioritized study plan</p>
-      <ol className="list-decimal pl-5 text-neutral-300">
+    <div className="mt-6">
+      <h3 className="text-base font-semibold">Prioritised study plan</h3>
+      <ul className="mt-2 space-y-2">
         {topics.map((t, i) => (
-          <li key={i}>
-            <span className={color(t.priority)}>{t.topic}</span>
-            {t.exercise ? <span className="text-neutral-500"> — {t.exercise}</span> : null}
+          <li key={i} className="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm">
+            <span className={pill(t.priority)}>{t.priority}</span>
+            <span className="font-medium">{t.topic}</span>
+            {t.exercise && <span className="text-[13px] text-muted-foreground">— {t.exercise}</span>}
           </li>
         ))}
-      </ol>
+      </ul>
     </div>
   );
 }
@@ -193,36 +289,40 @@ function Salary({ est }: { est: FinalRep["salary"] & object }) {
   // withheld estimate (no assessed interview evidence / thin resume): no invented number
   if (est.available === false || !est.range_inr || est.point_estimate_inr == null) {
     return (
-      <div className="mt-4 rounded-lg border border-amber-900/60 bg-amber-950/20 p-4 text-sm">
-        <p className="font-medium text-amber-200">
-          Salary estimate: insufficient evidence
-        </p>
+      <div className="mt-6 rounded-[20px] bg-card p-6 text-sm">
+        <p className="text-base font-semibold">Salary estimate — insufficient evidence</p>
         {est.reason && (
-          <p className="mt-1 text-xs text-neutral-400">{est.reason}</p>
+          <p className="mt-1 text-muted-foreground">{est.reason}</p>
         )}
-        <details className="mt-2 text-neutral-400">
-          <summary className="cursor-pointer text-xs">Assumptions &amp; limitations</summary>
-          <ul className="mt-1 list-disc pl-5 text-xs">
-            {(est.assumptions ?? []).map((a, i) => <li key={i}>{a}</li>)}
-            {est.limitations && <li>{est.limitations}</li>}
-          </ul>
-        </details>
+        <Assumptions est={est} />
       </div>
     );
   }
   return (
-    <div className="mt-4 rounded-lg border border-neutral-800 bg-neutral-900/60 p-4 text-sm">
-      <p className="font-medium">
-        Salary estimate: ₹{est.range_inr[0].toLocaleString("en-IN")} – ₹{est.range_inr[1].toLocaleString("en-IN")}
-        <span className="text-neutral-500"> /yr (point ₹{est.point_estimate_inr.toLocaleString("en-IN")}, cap ₹{est.cap_inr.toLocaleString("en-IN")}, {est.confidence} confidence)</span>
+    <div className="mt-6 rounded-[20px] bg-card p-6 text-sm">
+      <p className="text-base font-semibold">Salary estimate</p>
+      <p className="num mt-1 text-[22px]">
+        ₹{est.range_inr[0].toLocaleString("en-IN")}
+        <span className="text-[#949494]"> – </span>
+        ₹{est.range_inr[1].toLocaleString("en-IN")}
+        <span className="text-sm text-muted-foreground"> /yr</span>
       </p>
-      <details className="mt-2 text-neutral-400">
-        <summary className="cursor-pointer text-xs">Assumptions & limitations</summary>
-        <ul className="mt-1 list-disc pl-5 text-xs">
-          {est.assumptions.map((a, i) => <li key={i}>{a}</li>)}
-          <li>{est.limitations}</li>
-        </ul>
-      </details>
+      <p className="mt-1 text-[13px] text-muted-foreground">
+        point ₹{est.point_estimate_inr.toLocaleString("en-IN")} · cap ₹{est.cap_inr.toLocaleString("en-IN")} · {est.confidence} confidence
+      </p>
+      <Assumptions est={est} />
     </div>
+  );
+}
+
+function Assumptions({ est }: { est: FinalRep["salary"] & object }) {
+  return (
+    <details className="mt-3 text-muted-foreground">
+      <summary className="cursor-pointer text-[13px] underline-offset-4">Assumptions &amp; limitations</summary>
+      <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[13px]">
+        {(est.assumptions ?? []).map((a, i) => <li key={i}>{a}</li>)}
+        {est.limitations && <li>{est.limitations}</li>}
+      </ul>
+    </details>
   );
 }

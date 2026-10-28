@@ -1,0 +1,1623 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-28T11:48:29.445Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.38,
+    0.26
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1761,
+     "screens": 2,
+     "words": 403,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 2,
+     "size": 60,
+     "vw": 4.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 176,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "lines": 2,
+     "size": 60,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Mock interviews that match the job.",
+      "words": 6,
+      "chars": 35,
+      "lines": 2,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 176,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      18,
+      24,
+      60
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.1
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 60,
+      "vw": 4.2,
+      "font": "Inter",
+      "text": "Mock interviews that match the job."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "14:20"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#000000",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#b4b4b4",
+       "share": 0.61
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.34
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.02
+      },
+      {
+       "color": "#949494",
+       "share": 0.01
+      },
+      {
+       "color": "#e5a93b",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Create a free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.site-header.sticky 1440px",
+      "footer.mt-8.border-t 1104px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1761,
+    "margins": {
+     "left": 168,
+     "right": 177
+    },
+    "sections": [
+     {
+      "sel": "section.grid.items-center",
+      "tag": "section",
+      "top": 57,
+      "height": 616,
+      "words": 134,
+      "media": 0,
+      "middle": 108,
+      "heading": {
+       "text": "Mock interviews that match the job.",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 168,
+      "right": 202,
+      "textLeft": 168,
+      "textRight": 202,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.grid.gap-x-[14px]",
+      "tag": "section",
+      "top": 673,
+      "height": 212,
+      "words": 114,
+      "media": 0,
+      "middle": 35,
+      "heading": null,
+      "left": 168,
+      "right": 178,
+      "textLeft": 168,
+      "textRight": 178,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 885,
+      "height": 228,
+      "words": 43,
+      "media": 0,
+      "middle": 6,
+      "heading": {
+       "text": "Eleven role profiles",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 168,
+      "right": 398,
+      "textLeft": 168,
+      "textRight": 398,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 1113,
+      "height": 375,
+      "words": 88,
+      "media": 0,
+      "middle": 38,
+      "heading": {
+       "text": "What you practice, and what you get back",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 168,
+      "right": 177,
+      "textLeft": 168,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-8.border-t",
+      "tag": "footer",
+      "top": 1520,
+      "height": 145,
+      "words": 26,
+      "media": 0,
+      "middle": 92,
+      "heading": null,
+      "left": 168,
+      "right": 168,
+      "textLeft": 168,
+      "textRight": 168,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Mock interviews that match the job.",
+      "size": 60,
+      "top": 176,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 168,
+      "n": 6
+     },
+     {
+      "x": 541,
+      "n": 1
+     },
+     {
+      "x": 727,
+      "n": 1
+     },
+     {
+      "x": 913,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 1260,
+     "y": 120,
+     "w": 180,
+     "h": 600
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": true,
+    "ground": "#000000",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 168,
+     "right": 177
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 2,
+     "size": 60,
+     "vw": 4.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 176,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       20,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 3,
+     "median": 37
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.05,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      18,
+      24,
+      60
+     ]
+    },
+    "title": {
+     "text": "Mock interviews that match the job.",
+     "size": 60,
+     "top": 176
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.5,
+    0.42,
+    0.37
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 2240,
+     "screens": 2.2,
+     "words": 403,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 1,
+     "size": 32,
+     "vw": 4.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "lines": 1,
+     "size": 32,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Mock interviews that match the job.",
+      "words": 6,
+      "chars": 35,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      18,
+      24,
+      32
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.1
+     },
+     "measureChars": 31,
+     "max": {
+      "size": 32,
+      "vw": 4.2,
+      "font": "Inter",
+      "text": "Mock interviews that match the job."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "14:20"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#000000",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0
+     },
+     "dark": true,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#b4b4b4",
+       "share": 0.61
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.34
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.02
+      },
+      {
+       "color": "#949494",
+       "share": 0.01
+      },
+      {
+       "color": "#e5a93b",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Create a free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.site-header.sticky 768px",
+      "footer.mt-8.border-t 720px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 2240,
+    "margins": {
+     "left": 24,
+     "right": 29
+    },
+    "sections": [
+     {
+      "sel": "section.grid.items-center",
+      "tag": "section",
+      "top": 57,
+      "height": 843,
+      "words": 134,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Mock interviews that match the job.",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 130,
+      "textLeft": 24,
+      "textRight": 130,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.grid.gap-x-[14px]",
+      "tag": "section",
+      "top": 900,
+      "height": 284,
+      "words": 114,
+      "media": 0,
+      "middle": 23,
+      "heading": null,
+      "left": 24,
+      "right": 29,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 1184,
+      "height": 272,
+      "words": 43,
+      "media": 0,
+      "middle": 39,
+      "heading": {
+       "text": "Eleven role profiles",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 57,
+      "textLeft": 24,
+      "textRight": 57,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 1456,
+      "height": 491,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What you practice, and what you get back",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 31,
+      "textLeft": 24,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-8.border-t",
+      "tag": "footer",
+      "top": 1979,
+      "height": 165,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Mock interviews that match the job.",
+      "size": 32,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 6
+     },
+     {
+      "x": 269,
+      "n": 1
+     },
+     {
+      "x": 391,
+      "n": 1
+     },
+     {
+      "x": 513,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": true,
+    "ground": "#000000",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 24,
+     "right": 29
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 1,
+     "size": 32,
+     "vw": 4.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       20,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 3,
+     "median": 57
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.05,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      18,
+      24,
+      32
+     ]
+    },
+    "title": {
+     "text": "Mock interviews that match the job.",
+     "size": 32,
+     "top": 113
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.66,
+    0.56,
+    0.69,
+    0.54
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3104,
+     "screens": 3.7,
+     "words": 403,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 2,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 2,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 2,
+     "size": 32,
+     "vw": 8.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "lines": 2,
+     "size": 32,
+     "font": "Inter"
+    },
+    "headings": [
+     {
+      "text": "Mock interviews that match the job.",
+      "words": 6,
+      "chars": 35,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 113,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Eleven role profiles",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1662,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What you practice, and what you get back",
+      "words": 8,
+      "chars": 40,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2086,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 8,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      18,
+      24,
+      32
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 15,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.1
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 32,
+      "vw": 8.2,
+      "font": "Inter",
+      "text": "Mock interviews that match the job."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [
+      "14:20"
+     ],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#000000",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#111111",
+       "top": 490,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#b4b4b4",
+       "share": 0.61
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.34
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.02
+      },
+      {
+       "color": "#949494",
+       "share": 0.01
+      },
+      {
+       "color": "#e5a93b",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0a0a0a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 3,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Sign in",
+      "Create a free account",
+      "Sign in"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.site-header.sticky 390px",
+      "footer.mt-8.border-t 358px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 57,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "inter"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3104,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section.grid.items-center",
+      "tag": "section",
+      "top": 57,
+      "height": 1017,
+      "words": 134,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Mock interviews that match the job.",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.grid.gap-x-[14px]",
+      "tag": "section",
+      "top": 1074,
+      "height": 556,
+      "words": 114,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 19,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 1630,
+      "height": 424,
+      "words": 43,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Eleven role profiles",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.py-8",
+      "tag": "section",
+      "top": 2054,
+      "height": 737,
+      "words": 88,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What you practice, and what you get back",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 27,
+      "textLeft": 16,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.mt-8.border-t",
+      "tag": "footer",
+      "top": 2823,
+      "height": 185,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Mock interviews that match the job.",
+      "size": 32,
+      "top": 113,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 9
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 15,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": true,
+    "ground": "#000000",
+    "sidebar": null,
+    "topbar": {
+     "h": 57
+    },
+    "canvas": {
+     "left": 16,
+     "right": 16
+    },
+    "hero": {
+     "text": "Mock interviews that match the job.",
+     "words": 6,
+     "chars": 35,
+     "lines": 2,
+     "size": 32,
+     "vw": 8.2,
+     "font": "Inter",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.08,
+     "top": 113,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 0,
+    "layout": {
+     "panels": 3,
+     "firstScreen": 1,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 5,
+     "radii": [
+      [
+       20,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 0,
+     "tabularShare": null,
+     "kpiMax": null
+    },
+    "rows": {
+     "count": 3,
+     "median": 57
+    },
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.05,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      18,
+      24,
+      32
+     ]
+    },
+    "title": {
+     "text": "Mock interviews that match the job.",
+     "size": 32,
+     "top": 113
+    },
+    "colourShare": 0
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "app-title-size",
+   "width": 1440,
+   "message": "The h1 is 60px (\"Mock interviews that match the job.\").",
+   "fix": "An app screen is not a landing page: the title is 18-32px (20-24px on a phone).",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/desktop-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/tablet-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/mobile-fold.jpg",
+   "pages": [
+    "/mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/.taste-skill/after-home/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
