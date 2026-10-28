@@ -1,0 +1,3 @@
+2026-10-28 00:40:00,387 tts_service INFO TTS service on 127.0.0.1:8001 (model=tts_models/en/ljspeech/tacotron2-DDC)
+2026-10-28 00:40:00,387 tts_service INFO loading tts_models/en/ljspeech/tacotron2-DDC (first call only; may download the model)
+Inconsistency detected by ld.so: ../sysdeps/x86_64/dl-machine.h: 498: elf_machine_rela_relative: Assertion `ELFW(R_TYPE) (reloc->r_info) == R_X86_64_RELATIVE' failed!

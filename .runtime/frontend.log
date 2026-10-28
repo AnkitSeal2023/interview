@@ -1,0 +1,2057 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 395ms
+✓ Running next.config.ts took 45ms
+
+ GET / 200 in 326ms (next.js: 145ms, application-code: 181ms)
+ GET /session/610c76be-bbe6-4fb1-9f14-efd529c7c74f 200 in 452ms (next.js: 402ms, application-code: 50ms)
+ GET / 200 in 47ms (next.js: 1.7ms, application-code: 45ms)
+[?25h
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 441ms
+✓ Running next.config.ts took 48ms
+
+ GET /session/610c76be-bbe6-4fb1-9f14-efd529c7c74f 200 in 688ms (next.js: 533ms, application-code: 155ms)
+ GET / 200 in 49ms (next.js: 6ms, application-code: 43ms)
+ GET / 200 in 26ms (next.js: 0.8ms, application-code: 25ms)
+ GET /session/610c76be-bbe6-4fb1-9f14-efd529c7c74f 200 in 51ms (next.js: 10ms, application-code: 41ms)
+ GET / 200 in 31ms (next.js: 1.5ms, application-code: 29ms)
+ GET /session/fe0acc19-9ad6-43bb-8556-3355b71d9ad7 200 in 34ms (next.js: 10ms, application-code: 24ms)
+Failed to proxy http://localhost:8000/api/tts Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+ GET /session/fe0acc19-9ad6-43bb-8556-3355b71d9ad7 200 in 46ms (next.js: 9ms, application-code: 37ms)
+✓ Compiled in 57ms
+ GET /session/fe0acc19-9ad6-43bb-8556-3355b71d9ad7 200 in 43ms (next.js: 12ms, application-code: 31ms)
+ GET / 200 in 40ms (next.js: 1.6ms, application-code: 38ms)
+ GET / 200 in 45ms (next.js: 1.3ms, application-code: 44ms)
+ GET /session/633fe0ce-a10f-4ae1-bc6b-b000e17d9516 200 in 50ms (next.js: 15ms, application-code: 36ms)
+✓ Compiled in 32ms
+ GET /reports/633fe0ce-a10f-4ae1-bc6b-b000e17d9516 200 in 516ms (next.js: 492ms, application-code: 24ms)
+✓ Compiled in 22ms
+ GET / 200 in 39ms (next.js: 1.7ms, application-code: 37ms)
+ GET /session/9fe7f815-22f4-41dd-be79-f93a17d47d74 200 in 36ms (next.js: 15ms, application-code: 22ms)
+ GET /session/9fe7f815-22f4-41dd-be79-f93a17d47d74 200 in 45ms (next.js: 11ms, application-code: 34ms)
+ GET /session/9fe7f815-22f4-41dd-be79-f93a17d47d74 200 in 60ms (next.js: 20ms, application-code: 40ms)
+✓ Compiled in 141ms
+ GET / 200 in 33ms (next.js: 1.7ms, application-code: 31ms)
+ GET /session/cc9c8b59-9290-4bf7-ae9f-1aaed33ddb68 200 in 52ms (next.js: 14ms, application-code: 38ms)
+ GET /reports/cc9c8b59-9290-4bf7-ae9f-1aaed33ddb68 200 in 34ms (next.js: 13ms, application-code: 20ms)
+ GET / 200 in 37ms (next.js: 1.3ms, application-code: 36ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 34ms (next.js: 12ms, application-code: 22ms)
+✓ Compiled in 131ms
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 58ms (next.js: 17ms, application-code: 40ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 43ms (next.js: 13ms, application-code: 30ms)
+ GET /reports/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 31ms (next.js: 13ms, application-code: 18ms)
+[browser] Uncaught Error: Objects are not valid as a React child (found: object with keys {evidence}). If you meant to render a collection of children, use an array instead.
+    at <unknown> (src/app/reports/[sessionId]/page.tsx:49:11)
+    at Array.map (<anonymous>)
+    at ReportPage (src/app/reports/[sessionId]/page.tsx:44:34)
+  47 |           <p className="score font-mono">{rep.overall}/10</p>
+  48 |           <CompTable comps={rep.competencies} />
+> 49 |           <TwoCol a={rep.strengths} aTitle="Strengths" b={rep.weaknesses} bTitle="Weaknesses" />
+     |           ^
+  50 |           {rep.misconceptions?.length ? (
+  51 |             <p className="text-sm text-amber-300">Misconceptions: {rep.misconceptions.join(" · ")}</p>
+  52 |           ) : null}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 58ms
+ GET /reports/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 54ms (next.js: 17ms, application-code: 37ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 54ms
+ GET /reports/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 52ms (next.js: 16ms, application-code: 35ms)
+✓ Compiled in 236ms
+✓ Compiled in 45ms
+✓ Compiled in 24ms
+ GET /reports/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 38ms (next.js: 12ms, application-code: 26ms)
+ GET / 200 in 30ms (next.js: 1.0ms, application-code: 29ms)
+ GET /reports 200 in 33ms (next.js: 7ms, application-code: 26ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 31ms (next.js: 13ms, application-code: 18ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 32ms (next.js: 16ms, application-code: 17ms)
+ GET /session/9fe7f815-22f4-41dd-be79-f93a17d47d74 200 in 34ms (next.js: 18ms, application-code: 17ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 29ms (next.js: 12ms, application-code: 17ms)
+ GET /reports/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 35ms (next.js: 15ms, application-code: 19ms)
+ GET /session/16d9a336-e56a-4dc8-b784-a500e13050d4 200 in 49ms (next.js: 13ms, application-code: 36ms)
+ GET / 200 in 30ms (next.js: 1.1ms, application-code: 29ms)
+ GET / 200 in 37ms (next.js: 1.2ms, application-code: 36ms)
+ GET /session/1ef6f8f6-86f9-4357-91e9-f90d1cc37cdd 200 in 32ms (next.js: 12ms, application-code: 19ms)
+ GET /session/1ef6f8f6-86f9-4357-91e9-f90d1cc37cdd 200 in 49ms (next.js: 16ms, application-code: 32ms)
+ GET / 200 in 14ms (next.js: 1.3ms, application-code: 13ms)
+ GET /reports 200 in 24ms (next.js: 0.9ms, application-code: 23ms)
+ GET /session/1ef6f8f6-86f9-4357-91e9-f90d1cc37cdd 200 in 31ms (next.js: 13ms, application-code: 18ms)
+✓ Compiled in 56ms
+ GET /session/1ef6f8f6-86f9-4357-91e9-f90d1cc37cdd 200 in 52ms (next.js: 13ms, application-code: 38ms)
+✓ Compiled in 61ms
+✓ Compiled in 20ms
+✓ Compiled in 18ms
+✓ Compiled in 24ms
+ GET / 200 in 30ms (next.js: 1.4ms, application-code: 29ms)
+ GET /session/9e5d62b0-48dc-4488-bbf5-74b2cb53b4e6 200 in 33ms (next.js: 14ms, application-code: 19ms)
+ GET / 200 in 32ms (next.js: 1.3ms, application-code: 30ms)
+ GET / 200 in 28ms (next.js: 0.9ms, application-code: 27ms)
+ GET /session/770946c0-27cc-4037-8847-2460329b356a 200 in 33ms (next.js: 14ms, application-code: 19ms)
+ GET /session/770946c0-27cc-4037-8847-2460329b356a 200 in 51ms (next.js: 17ms, application-code: 34ms)
+✓ Compiled in 27ms
+ GET /session/770946c0-27cc-4037-8847-2460329b356a 200 in 50ms (next.js: 15ms, application-code: 35ms)
+ GET /session/770946c0-27cc-4037-8847-2460329b356a 200 in 92ms (next.js: 29ms, application-code: 63ms)
+ GET / 200 in 38ms (next.js: 2ms, application-code: 36ms)
+ GET /session/b39de35e-e826-40bb-99f5-e95a2c10e277 200 in 66ms (next.js: 20ms, application-code: 45ms)
+ GET / 200 in 37ms (next.js: 1.2ms, application-code: 36ms)
+ GET /session/6c1c2e67-2e33-4b3e-8535-cac8e1b4c2cb 200 in 34ms (next.js: 14ms, application-code: 20ms)
+ GET /session/df9bbed7-efba-445e-acdc-2729f1fb1715 200 in 34ms (next.js: 16ms, application-code: 18ms)
+ GET / 200 in 31ms (next.js: 1.5ms, application-code: 29ms)
+ GET / 200 in 26ms (next.js: 1.0ms, application-code: 25ms)
+ GET / 200 in 28ms (next.js: 1.1ms, application-code: 26ms)
+ GET /session/b58f84e6-d1f7-4fbd-96b7-b2770ef182ef 200 in 36ms (next.js: 14ms, application-code: 23ms)
+ GET / 200 in 32ms (next.js: 1.6ms, application-code: 30ms)
+ GET /session/39e832d6-bba2-470b-92b0-f9265e678ca7 200 in 30ms (next.js: 13ms, application-code: 17ms)
+23:09:58 supervisor: next dev exited rc=0 — restarting in 2s
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 14877, using available port 3001 instead.
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.0.149:3001
+✓ Ready in 512ms
+✓ Running next.config.ts took 51ms
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          14877
+- Dir:          /mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/frontend
+- Log:          .next/dev/logs/next-development.log
+
+You can access the existing server at http://localhost:3000,
+or run kill 14877 to stop it and start a new one.
+[?25h
+23:10:02 supervisor: next dev exited rc=0 — restarting in 2s
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 14877, using available port 3001 instead.
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.0.149:3001
+✓ Ready in 469ms
+✓ Running next.config.ts took 41ms
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          14877
+- Dir:          /mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/frontend
+- Log:          .next/dev/logs/next-development.log
+
+You can access the existing server at http://localhost:3000,
+or run kill 14877 to stop it and start a new one.
+[?25h
+23:10:05 supervisor: next dev exited rc=0 — restarting in 2s
+
+> frontend@0.1.0 dev
+> next dev
+
+⚠ Port 3000 is in use by process 14877, using available port 3001 instead.
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.0.149:3001
+✓ Ready in 482ms
+✓ Running next.config.ts took 41ms
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          14877
+- Dir:          /mnt/win/Users/ankit/Documents/Studies/coding/projects/interview/frontend
+- Log:          .next/dev/logs/next-development.log
+
+You can access the existing server at http://localhost:3000,
+or run kill 14877 to stop it and start a new one.
+[?25h
+23:10:09 supervisor: next dev exited rc=0 — restarting in 2s
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 392ms
+✓ Running next.config.ts took 42ms
+
+ GET /session/39e832d6-bba2-470b-92b0-f9265e678ca7 200 in 682ms (next.js: 530ms, application-code: 152ms)
+ GET / 200 in 49ms (next.js: 7ms, application-code: 42ms)
+ GET /session/39e832d6-bba2-470b-92b0-f9265e678ca7 200 in 44ms (next.js: 9ms, application-code: 35ms)
+ GET /session/39e832d6-bba2-470b-92b0-f9265e678ca7 200 in 47ms (next.js: 9ms, application-code: 38ms)
+ GET / 200 in 22ms (next.js: 4ms, application-code: 18ms)
+ GET / 200 in 24ms (next.js: 1.9ms, application-code: 22ms)
+ GET /login 200 in 37ms (next.js: 8ms, application-code: 29ms)
+ GET / 200 in 19ms (next.js: 1.7ms, application-code: 17ms)
+ GET / 200 in 28ms (next.js: 3ms, application-code: 25ms)
+ GET /session/4c923455-7cff-495f-b1f8-0dbe7a7f8c53 200 in 35ms (next.js: 9ms, application-code: 25ms)
+ GET / 200 in 37ms (next.js: 1.5ms, application-code: 36ms)
+ GET /session/f5d43da9-0e29-4267-96bb-d0c8eca2d744 200 in 32ms (next.js: 11ms, application-code: 21ms)
+ GET /session/107283a4-f593-4818-b266-9f81bcc01d22 200 in 30ms (next.js: 11ms, application-code: 19ms)
+ GET /session/e6632f79-c78e-4762-96db-7cd3a31a5993 200 in 31ms (next.js: 10ms, application-code: 22ms)
+ GET /session/6d1a4f9d-4b3e-4f03-97c0-c4616c81c4e4 200 in 28ms (next.js: 9ms, application-code: 18ms)
+ GET / 200 in 37ms (next.js: 1.6ms, application-code: 35ms)
+ GET /session/dfde96fb-4918-4ce8-98db-491975feb4da 200 in 30ms (next.js: 11ms, application-code: 19ms)
+✓ Compiled in 121ms
+ GET /session/dfde96fb-4918-4ce8-98db-491975feb4da 200 in 50ms (next.js: 11ms, application-code: 39ms)
+ GET / 200 in 32ms (next.js: 1.2ms, application-code: 31ms)
+ GET /reports 200 in 34ms (next.js: 6ms, application-code: 28ms)
+ GET /session/dfde96fb-4918-4ce8-98db-491975feb4da 200 in 28ms (next.js: 11ms, application-code: 17ms)
+✓ Compiled in 57ms
+✓ Compiled in 48ms
+ GET /session/dfde96fb-4918-4ce8-98db-491975feb4da 200 in 53ms (next.js: 12ms, application-code: 40ms)
+ GET / 200 in 30ms (next.js: 1.7ms, application-code: 29ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 33ms (next.js: 12ms, application-code: 20ms)
+✓ Compiled in 108ms
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 96ms (next.js: 21ms, application-code: 75ms)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerScrollHandler scrollRef={{scrollRef:null, ...}} renderTree={{...}}>
+      <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+        <LoadingBoundary name="e6c0934f-a..." loading={null}>
+          <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/session/e..." tree={[...]} params={{id:"e6c093..."}} renderTree={{...}} ...>
+                  <SegmentViewNode type="page" pagePath="session/[i...">
+                    <SegmentTrieNode>
+                    <Page>
+                      <Suspense fallback={<p>}>
+                        <InterviewClient sid="e6c0934f-a...">
+                          <div className="grid gap-5...">
+                            <div>
+                            <div
++                             className=""
+-                             className={"group/card flex flex-col gap-(--card-spacing) overflow-hidden rounded-xl bg..."}
+-                             data-slot="card"
+-                             data-size="default"
+                            >
+                              <Card className="flex min-h...">
+                                <div
++                                 data-slot="card"
+-                                 data-slot="card-content"
++                                 data-size="default"
+-                                 data-size={null}
++                                 className={"group/card gap-(--card-spacing) overflow-hidden rounded-xl bg-card py-(..."}
+-                                 className="px-(--card-spacing) flex min-h-[280px] flex-col items-center justify-cent..."
+                                >
+                                  <CardHeader className="pb-2">
++                                   <div
++                                     data-slot="card-header"
++                                     className="group/card-header @container/card-header grid auto-rows-min items-sta..."
++                                   >
+-                                   <p className="text-base font-medium text-neutral-100">
+                                  ...
+                  ...
+                ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at CardHeader (src/components/ui/badge.tsx:29:10)
+    at InterviewClient (src/app/session/[id]/InterviewClient.tsx:460:25)
+    at Page (src/app/session/[id]/page.tsx:12:7)
+  27 | )
+  28 |
+> 29 | function Badge({
+     |          ^
+  30 |   className,
+  31 |   variant = "default",
+  32 |   asChild = false,
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 119ms (next.js: 23ms, application-code: 96ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 84ms (next.js: 21ms, application-code: 63ms)
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 750ms
+✓ Running next.config.ts took 193ms
+
+ GET / 200 in 347ms (next.js: 194ms, application-code: 153ms)
+ GET / 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET /reports 200 in 48ms (next.js: 10ms, application-code: 38ms)
+ GET /login 200 in 50ms (next.js: 6ms, application-code: 43ms)
+ GET / 200 in 48ms (next.js: 8ms, application-code: 40ms)
+ GET / 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /reports 200 in 25ms (next.js: 1.2ms, application-code: 24ms)
+ GET / 200 in 34ms (next.js: 1.1ms, application-code: 33ms)
+ GET / 200 in 10ms (next.js: 1.9ms, application-code: 8ms)
+ GET / 200 in 49ms (next.js: 1.4ms, application-code: 48ms)
+ GET / 200 in 33ms (next.js: 3ms, application-code: 31ms)
+ GET /login 200 in 30ms (next.js: 1.1ms, application-code: 28ms)
+ GET / 200 in 18ms (next.js: 2ms, application-code: 16ms)
+ GET / 200 in 22ms (next.js: 1.7ms, application-code: 20ms)
+ GET /reports 200 in 27ms (next.js: 1.0ms, application-code: 26ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 428ms (next.js: 407ms, application-code: 21ms)
+ GET /reports 200 in 51ms (next.js: 1.9ms, application-code: 49ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 29ms (next.js: 10ms, application-code: 20ms)
+ GET /reports 200 in 24ms (next.js: 1.1ms, application-code: 23ms)
+ GET /reports/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 424ms (next.js: 401ms, application-code: 23ms)
+ GET /reports 200 in 23ms (next.js: 0.9ms, application-code: 22ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 30ms (next.js: 10ms, application-code: 20ms)
+ GET /reports 200 in 22ms (next.js: 1.3ms, application-code: 21ms)
+ GET /reports/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 28ms (next.js: 12ms, application-code: 15ms)
+ GET /reports 200 in 26ms (next.js: 1.2ms, application-code: 25ms)
+ GET /session/e6632f79-c78e-4762-96db-7cd3a31a5993 200 in 28ms (next.js: 10ms, application-code: 18ms)
+ GET /session/f5d43da9-0e29-4267-96bb-d0c8eca2d744 200 in 32ms (next.js: 9ms, application-code: 23ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 28ms (next.js: 10ms, application-code: 18ms)
+ GET /session/4c923455-7cff-495f-b1f8-0dbe7a7f8c53 200 in 26ms (next.js: 10ms, application-code: 17ms)
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 28ms (next.js: 10ms, application-code: 18ms)
+✓ Compiled in 55ms
+ GET /session/e6c0934f-acc4-4403-b84b-99e34915dc51 200 in 49ms (next.js: 8ms, application-code: 41ms)
+ GET /reports 200 in 25ms (next.js: 1.0ms, application-code: 24ms)
+ GET / 200 in 34ms (next.js: 0.8ms, application-code: 33ms)
+ GET / 200 in 33ms (next.js: 1.1ms, application-code: 32ms)
+ GET / 200 in 32ms (next.js: 0.8ms, application-code: 31ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/hmr from "192.168.0.149".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['192.168.0.149'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 36ms (next.js: 0.9ms, application-code: 35ms)
+ GET /session/9aad05af-000e-457d-8c13-01f273acae66 200 in 29ms (next.js: 9ms, application-code: 20ms)
+✓ Compiled in 52ms
+ GET / 200 in 27ms (next.js: 0.8ms, application-code: 26ms)
+ GET / 200 in 26ms (next.js: 0.9ms, application-code: 25ms)
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 30ms (next.js: 13ms, application-code: 17ms)
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 59ms (next.js: 17ms, application-code: 42ms)
+✓ Compiled in 58ms
+✓ Compiled in 31ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 51ms (next.js: 14ms, application-code: 37ms)
+✓ Compiled in 87ms
+✓ Compiled in 28ms
+✓ Compiled in 33ms
+✓ Compiled in 652ms
+[browser] ./src/app/session/[id]/InterviewClient.tsx:697:18
+Error: Expected '</', got '='
+  695 | 							</button>
+  696 | 						</CardContent>
+> 697 | 						< className=""flex flex-rowdiv>
+      |            ^
+  698 |
+  699 | 					</Card>
+  700 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:697:18
+Error: Expected '</', got '='
+  695 | 							</button>
+  696 | 						</CardContent>
+> 697 | 						< className=""flex flex-rowdiv>
+      |            ^
+  698 |
+  699 | 					</Card>
+  700 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+⨯ ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  [90m693 |[0m 							</button>
+  [90m694 |[0m 						</[33mCardContent[0m>
+[31m[1m>[0m [90m695 |[0m 						< className=[32m""[0mflex flex-rowdiv>
+  [90m    |[0m            [31m[1m^[0m
+  [90m696 |[0m
+  [90m697 |[0m 					</[33mCard[0m>
+  [90m698 |[0m 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx
+
+
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 500 in 527ms (next.js: 386ms, application-code: 140ms)
+[browser] Uncaught Error: ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx
+
+
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:695:18
+Error: Expected '</', got '='
+  693 | 							</button>
+  694 | 						</CardContent>
+> 695 | 						< className=""flex flex-rowdiv>
+      |            ^
+  696 |
+  697 | 					</Card>
+  698 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+✓ Compiled in 29ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 47ms (next.js: 13ms, application-code: 34ms)
+✓ Compiled in 100ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 41ms (next.js: 17ms, application-code: 24ms)
+✓ Compiled in 30ms
+[browser] ./src/app/layout.tsx:39:17
+Error: Expected '</', got 'jsx text'
+  37 |               <UserMenu />
+  38 |             </nav>
+> 39 |           </div>
+     |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 40 |         </header>
+     | ^^^^^^^^
+  41 |         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
+  42 |       </body>
+  43 |     </html>
+
+Parsing ecmascript source code failed 
+✓ Compiled in 15ms
+⨯ ReferenceError: Link is not defined
+    at RootLayout (src/app/layout.tsx:33:14)
+  31 | 						<div>
+  32 |
+> 33 |             <Link href="/" className="font-semibold tracking-tight"/>
+     |              ^
+  34 |               Role<span className="text-neutral-500">·</span>Mock
+  35 |           </div>
+  36 |             <nav className="flex items-center gap-4 text-sm text-neutral-400"> {
+  digest: '2231334734'
+}
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 71ms (next.js: 23ms, application-code: 48ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 232ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 86ms (next.js: 15ms, application-code: 71ms)
+✓ Compiled in 15ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 37ms (next.js: 14ms, application-code: 23ms)
+✓ Compiled in 39ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 34ms (next.js: 12ms, application-code: 22ms)
+[browser] ./src/app/layout.tsx:33:66
+Error: Expected '</', got 'string literal'
+  31 | ...uto flex max-w-6xl items-center justify-between px-4 py-3">
+  32 | ...
+> 33 | ...le<span className="text-neutral-500">·</span>Mock" href="/" className="font-semibold tr...
+     |                                       ^^^^^^^^^^^^^^^
+  34 | ...Name="text-neutral-500">·</span>Mock
+  35 | ...
+  36 | ...ex items-center gap-4 text-sm text-neutral-400">
+
+Parsing ecmascript source code failed 
+✓ Compiled in 33ms
+✓ Compiled in 32ms
+✓ Compiled in 61ms
+✓ Compiled in 41ms
+✓ Compiled in 62ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 61ms (next.js: 18ms, application-code: 43ms)
+✓ Compiled in 29ms
+✓ Compiled in 53ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 57ms (next.js: 22ms, application-code: 35ms)
+✓ Compiled in 42ms
+✓ Compiled in 62ms
+ GET / 200 in 34ms (next.js: 1.6ms, application-code: 32ms)
+✓ Compiled in 57ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 45ms (next.js: 25ms, application-code: 20ms)
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 74ms (next.js: 19ms, application-code: 55ms)
+[?25h
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 448ms
+✓ Running next.config.ts took 45ms
+
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 744ms (next.js: 558ms, application-code: 186ms)
+ GET / 200 in 52ms (next.js: 8ms, application-code: 44ms)
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 49ms (next.js: 9ms, application-code: 39ms)
+✓ Compiled in 135ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 85ms (next.js: 51ms, application-code: 34ms)
+✓ Compiled in 115ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 56ms (next.js: 12ms, application-code: 44ms)
+✓ Compiled in 25ms
+✓ Compiled in 41ms
+✓ Compiled in 193ms
+✓ Compiled in 21ms
+✓ Compiled in 13ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 34ms (next.js: 11ms, application-code: 23ms)
+✓ Compiled in 16ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 32ms (next.js: 10ms, application-code: 22ms)
+✓ Compiled in 17ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 36ms (next.js: 10ms, application-code: 26ms)
+✓ Compiled in 36ms
+✓ Compiled in 24ms
+✓ Compiled in 49ms
+✓ Compiled in 95ms
+✓ Compiled in 40ms
+ GET /session/10c6aee9-6fb8-4d8a-b537-5e996dcd0ff1 200 in 39ms (next.js: 14ms, application-code: 26ms)
+✓ Compiled in 144ms
+[browser] ./src/app/session/[id]/InterviewClient.tsx:10:10
+Error: the name `useRouter` is defined multiple times
+   8 | import type { RoundState, SessionView, TestSummary } from "@/lib/types";
+   9 | import { speak, type VoiceState, useStt } from "@/lib/voice";
+> 10 | import { useRouter } from "next/navigation";
+     |          ^^^^^^^^^
+  11 | import { Badge } from "@/components/ui/badge";
+  12 | import { Button } from "@/components/ui/button";
+  13 | import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+Ecmascript file had an error
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+✓ Compiled in 49ms
+✓ Compiled in 29ms
+✓ Compiled in 26ms
+ GET / 200 in 16ms (next.js: 2ms, application-code: 13ms)
+✓ Compiled in 233ms
+ GET / 200 in 31ms (next.js: 1.5ms, application-code: 29ms)
+ GET / 200 in 8ms (next.js: 3ms, application-code: 6ms)
+ GET / 200 in 31ms (next.js: 1.0ms, application-code: 30ms)
+ GET / 200 in 21ms (next.js: 1.8ms, application-code: 19ms)
+ GET / 200 in 23ms (next.js: 0.8ms, application-code: 22ms)
+ GET / 200 in 24ms (next.js: 1.0ms, application-code: 23ms)
+ GET /login 200 in 24ms (next.js: 8ms, application-code: 16ms)
+ GET / 200 in 12ms (next.js: 1.5ms, application-code: 11ms)
+ GET / 200 in 15ms (next.js: 1.4ms, application-code: 13ms)
+ GET / 200 in 30ms (next.js: 1.1ms, application-code: 29ms)
+✓ Compiled in 29ms
+ GET / 200 in 30ms (next.js: 1.8ms, application-code: 29ms)
+ GET /session/f70d470e-7270-4e30-8e07-e943dde20497 200 in 33ms (next.js: 13ms, application-code: 20ms)
+ GET / 200 in 15ms (next.js: 1.2ms, application-code: 14ms)
+ GET /session/ba1e45f6-1ec9-4c34-97bd-dc0bd10d078b 200 in 43ms (next.js: 13ms, application-code: 29ms)
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 662ms
+✓ Running next.config.ts took 184ms
+
+ GET / 200 in 493ms (next.js: 244ms, application-code: 249ms)
+ GET /session/ba1e45f6-1ec9-4c34-97bd-dc0bd10d078b 200 in 620ms (next.js: 555ms, application-code: 65ms)
+ GET / 200 in 31ms (next.js: 1.5ms, application-code: 29ms)
+ GET / 200 in 24ms (next.js: 4ms, application-code: 21ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 27ms (next.js: 7ms, application-code: 20ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 48ms (next.js: 7ms, application-code: 41ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 42ms (next.js: 8ms, application-code: 34ms)
+ GET / 200 in 25ms (next.js: 1.4ms, application-code: 23ms)
+ GET /reports 200 in 29ms (next.js: 9ms, application-code: 21ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 32ms (next.js: 10ms, application-code: 22ms)
+ GET / 200 in 23ms (next.js: 0.9ms, application-code: 22ms)
+ GET / 200 in 23ms (next.js: 0.8ms, application-code: 22ms)
+ GET / 200 in 22ms (next.js: 0.7ms, application-code: 22ms)
+ GET / 200 in 21ms (next.js: 0.7ms, application-code: 20ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 61ms (next.js: 18ms, application-code: 43ms)
+ GET / 200 in 14ms (next.js: 1.5ms, application-code: 13ms)
+ GET / 200 in 28ms (next.js: 1.2ms, application-code: 27ms)
+ GET / 200 in 16ms (next.js: 2ms, application-code: 14ms)
+ GET /login 200 in 37ms (next.js: 7ms, application-code: 30ms)
+ GET / 200 in 16ms (next.js: 1.8ms, application-code: 14ms)
+ GET / 200 in 20ms (next.js: 1.7ms, application-code: 18ms)
+ GET / 200 in 24ms (next.js: 0.9ms, application-code: 23ms)
+ GET /reports 200 in 18ms (next.js: 1.4ms, application-code: 16ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 28ms (next.js: 9ms, application-code: 20ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 46ms (next.js: 10ms, application-code: 35ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 43ms (next.js: 9ms, application-code: 33ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 37ms (next.js: 8ms, application-code: 29ms)
+ GET / 200 in 22ms (next.js: 1.4ms, application-code: 21ms)
+ GET / 200 in 15ms (next.js: 1.3ms, application-code: 14ms)
+ GET /reports 200 in 18ms (next.js: 1.2ms, application-code: 16ms)
+✓ Compiled in 74ms
+✓ Compiled in 46ms
+ GET /reports 200 in 42ms (next.js: 1.3ms, application-code: 41ms)
+ GET / 200 in 14ms (next.js: 1.2ms, application-code: 13ms)
+ GET / 200 in 16ms (next.js: 1.2ms, application-code: 15ms)
+ GET /reports 200 in 14ms (next.js: 1.1ms, application-code: 13ms)
+ GET /session/0b9d5dec-eaa4-4e9d-9597-44c6881dbc07 200 in 34ms (next.js: 12ms, application-code: 21ms)
+ GET / 200 in 16ms (next.js: 1.7ms, application-code: 14ms)
+ GET / 200 in 28ms (next.js: 1.2ms, application-code: 26ms)
+ GET / 200 in 29ms (next.js: 0.8ms, application-code: 29ms)
+Failed to proxy http://localhost:8000/api/resume/3e487089-39e5-412c-aa7f-6858445a88f6/structure Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+ GET / 200 in 30ms (next.js: 1.6ms, application-code: 28ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 30ms (next.js: 12ms, application-code: 19ms)
+ GET / 200 in 28ms (next.js: 0.9ms, application-code: 27ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 50ms (next.js: 14ms, application-code: 36ms)
+Failed to proxy http://localhost:8000/api/rounds/6a29cdf5-acdd-4c23-a592-4b3252625f8c/answer Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+ GET / 200 in 22ms (next.js: 0.7ms, application-code: 21ms)
+✓ Compiled in 28ms
+✓ Compiled in 26ms
+✓ Compiled in 18ms
+ GET / 200 in 22ms (next.js: 0.7ms, application-code: 21ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 47ms (next.js: 14ms, application-code: 33ms)
+ GET / 200 in 14ms (next.js: 1.3ms, application-code: 12ms)
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 743ms
+✓ Running next.config.ts took 210ms
+
+ GET / 200 in 322ms (next.js: 164ms, application-code: 158ms)
+ GET / 200 in 34ms (next.js: 3ms, application-code: 32ms)
+Failed to proxy http://localhost:8000/api/auth/me Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Failed to proxy http://localhost:8000/api/auth/me Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Failed to proxy http://localhost:8000/api/auth/me Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+ GET /login 200 in 49ms (next.js: 8ms, application-code: 41ms)
+ GET / 200 in 20ms (next.js: 3ms, application-code: 16ms)
+ GET / 200 in 20ms (next.js: 1.4ms, application-code: 19ms)
+ GET /reports 200 in 21ms (next.js: 8ms, application-code: 14ms)
+ GET / 200 in 17ms (next.js: 1.9ms, application-code: 15ms)
+ GET / 200 in 30ms (next.js: 1.3ms, application-code: 28ms)
+ GET / 200 in 12ms (next.js: 1.7ms, application-code: 10ms)
+ GET / 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET / 200 in 20ms (next.js: 1.7ms, application-code: 18ms)
+ GET / 200 in 27ms (next.js: 0.8ms, application-code: 26ms)
+ GET /login 200 in 30ms (next.js: 1.0ms, application-code: 29ms)
+ GET / 200 in 16ms (next.js: 2.0ms, application-code: 14ms)
+ GET / 200 in 19ms (next.js: 1.6ms, application-code: 18ms)
+ GET / 200 in 24ms (next.js: 0.9ms, application-code: 23ms)
+ GET /reports 200 in 18ms (next.js: 1.2ms, application-code: 17ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 431ms (next.js: 410ms, application-code: 21ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 64ms (next.js: 14ms, application-code: 50ms)
+ GET / 200 in 16ms (next.js: 1.5ms, application-code: 14ms)
+ GET /reports 200 in 15ms (next.js: 1.2ms, application-code: 14ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 31ms (next.js: 12ms, application-code: 19ms)
+✓ Compiled in 128ms
+✓ Compiled in 47ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 35ms (next.js: 11ms, application-code: 25ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 54ms (next.js: 13ms, application-code: 41ms)
+✓ Compiled in 13ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 33ms (next.js: 10ms, application-code: 22ms)
+✓ Compiled in 30ms
+✓ Compiled in 23ms
+✓ Compiled in 33ms
+✓ Compiled in 26ms
+✓ Compiled in 33ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 62ms (next.js: 15ms, application-code: 47ms)
+✓ Compiled in 33ms
+✓ Compiled in 61ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 32ms (next.js: 10ms, application-code: 21ms)
+✓ Compiled in 46ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 41ms (next.js: 15ms, application-code: 26ms)
+✓ Compiled in 38ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 38ms (next.js: 15ms, application-code: 23ms)
+✓ Compiled in 32ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 59ms (next.js: 16ms, application-code: 44ms)
+✓ Compiled in 15ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 36ms (next.js: 10ms, application-code: 26ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 53ms (next.js: 12ms, application-code: 41ms)
+✓ Compiled in 14ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 33ms (next.js: 11ms, application-code: 22ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 46ms (next.js: 11ms, application-code: 34ms)
+✓ Compiled in 15ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 34ms (next.js: 10ms, application-code: 24ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 43ms (next.js: 10ms, application-code: 33ms)
+✓ Compiled in 15ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 44ms (next.js: 15ms, application-code: 30ms)
+✓ Compiled in 17ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 32ms (next.js: 10ms, application-code: 22ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 48ms (next.js: 12ms, application-code: 36ms)
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 46ms (next.js: 12ms, application-code: 33ms)
+✓ Compiled in 35ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 44ms (next.js: 11ms, application-code: 33ms)
+✓ Compiled in 15ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 35ms (next.js: 12ms, application-code: 23ms)
+✓ Compiled in 16ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 34ms (next.js: 11ms, application-code: 23ms)
+✓ Compiled in 38ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 33ms (next.js: 12ms, application-code: 22ms)
+✓ Compiled in 15ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 29ms (next.js: 10ms, application-code: 19ms)
+✓ Compiled in 32ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 66ms (next.js: 14ms, application-code: 52ms)
+✓ Compiled in 37ms
+✓ Compiled in 69ms
+✓ Compiled in 47ms
+✓ Compiled in 299ms
+✓ Compiled in 30ms
+✓ Compiled in 70ms
+✓ Compiled in 37ms
+✓ Compiled in 36ms
+✓ Compiled in 34ms
+✓ Compiled in 253ms
+[browser] ./src/app/session/[id]/InterviewClient.tsx:688:5
+Error: Expected '</', got '{'
+  686 |
+  687 | 				{/* live chat + editor */}
+> 688 | 				{showInterviewWorkspace ? (
+      | ^
+  689 | 					<div className={isDsa ? "grid gap-5 xl:grid-cols-2" : ""}>
+  690 | 						<Card className="flex min-h-[560px] flex-col hairline-panel">
+  691 | 							<CardHeader className="pb-2">
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:688:5
+Error: Expected '</', got '{'
+  686 |
+  687 | 				{/* live chat + editor */}
+> 688 | 				{showInterviewWorkspace ? (
+      | ^
+  689 | 					<div className={isDsa ? "grid gap-5 xl:grid-cols-2" : ""}>
+  690 | 						<Card className="flex min-h-[560px] flex-col hairline-panel">
+  691 | 							<CardHeader className="pb-2">
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+✓ Compiled in 77ms
+ GET /session/0708892e-b89d-4b84-a609-797c30c43efc 200 in 44ms (next.js: 17ms, application-code: 28ms)
+ GET / 200 in 15ms (next.js: 1.8ms, application-code: 13ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 31ms (next.js: 11ms, application-code: 21ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 53ms (next.js: 11ms, application-code: 42ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 52ms (next.js: 10ms, application-code: 41ms)
+✓ Compiled in 41ms
+✓ Compiled in 28ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 47ms (next.js: 12ms, application-code: 35ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 53ms (next.js: 18ms, application-code: 34ms)
+✓ Compiled in 184ms
+✓ Compiled in 129ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 115ms (next.js: 59ms, application-code: 55ms)
+✓ Compiled in 34ms
+[browser] ./src/app/session/[id]/InterviewClient.tsx:589:8
+Error: Expression expected
+  587 | 							<PlayPauseIcon paused={session?.status === "paused"} />
+  588 | 						</Button>
+> 589 | 					</>
+      |   ^
+  590 | 					)}
+  591 | 					<span className="truncate text-sm font-medium text-neutral-200">{stageName} round</span>
+  592 | 				</div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+✓ Compiled in 33ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 36ms (next.js: 13ms, application-code: 23ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 84ms (next.js: 22ms, application-code: 63ms)
+✓ Compiled in 48ms
+✓ Compiled in 40ms
+✓ Compiled in 40ms
+✓ Compiled in 53ms
+✓ Compiled in 31ms
+✓ Compiled in 42ms
+✓ Compiled in 82ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 61ms (next.js: 15ms, application-code: 46ms)
+✓ Compiled in 31ms
+✓ Compiled in 23ms
+✓ Compiled in 44ms
+✓ Compiled in 35ms
+✓ Compiled in 35ms
+✓ Compiled in 45ms
+✓ Compiled in 30ms
+✓ Compiled in 33ms
+✓ Compiled in 102ms
+✓ Compiled in 23ms
+✓ Compiled in 22ms
+✓ Compiled in 46ms
+✓ Compiled in 39ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 54ms (next.js: 16ms, application-code: 38ms)
+✓ Compiled in 38ms
+✓ Compiled in 23ms
+✓ Compiled in 31ms
+✓ Compiled in 44ms
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 48ms (next.js: 17ms, application-code: 31ms)
+[browser] ./src/app/session/[id]/InterviewClient.tsx:855:11
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  853 | 											</div>
+  854 | 										</div>
+> 855 | 									)}
+      |  ^
+  856 | 								</form>
+  857 | 								{round?.status === "completed" && !finalReport && (
+  858 | 									<Button onClick={() => nextRound()}>Start next round</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:855:11
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  853 | 											</div>
+  854 | 										</div>
+> 855 | 									)}
+      |  ^
+  856 | 								</form>
+  857 | 								{round?.status === "completed" && !finalReport && (
+  858 | 									<Button onClick={() => nextRound()}>Start next round</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:863:11
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  861 | 											</div>
+  862 | 										</div>
+> 863 | 									)}
+      |  ^
+  864 | 								</form>
+  865 | 								{round?.status === "completed" && !finalReport && (
+  866 | 									<Button onClick={() => nextRound()}>Start next round</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:863:11
+Error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  861 | 											</div>
+  862 | 										</div>
+> 863 | 									)}
+      |  ^
+  864 | 								</form>
+  865 | 								{round?.status === "completed" && !finalReport && (
+  866 | 									<Button onClick={() => nextRound()}>Start next round</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:805:14
+Error: Expected '</', got 'ident'
+  803 | 															setBusy(false);
+  804 | 														}}
+> 805 | 													disabled={busy}
+      | ^^^^^^^^
+  806 | 												>
+  807 | 													{busy ? "Trying again…" : "Try again"}
+  808 | 												</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:805:14
+Error: Expected '</', got 'ident'
+  803 | 															setBusy(false);
+  804 | 														}}
+> 805 | 													disabled={busy}
+      | ^^^^^^^^
+  806 | 												>
+  807 | 													{busy ? "Trying again…" : "Try again"}
+  808 | 												</Button>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+[browser] ./src/app/session/[id]/InterviewClient.tsx:577:2
+Error: Return statement is not allowed here
+   575 | 		session?.status === "in_progress" || session?.status === "paused";
+   576 |
+>  577 | 	return (
+       | ^^^^^^^
+>  578 | 		<div className="bg-red-500/20 w-full interview-screen flex flex-col">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  579 | 			<div className="flex items-center justify-between gap-3 border-b border-border bg-backgr...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  580 | 				<div className="flex min-w-0 items-center gap-3">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  581 | 					<Button
+       | ^^^^^^^
+>  582 | 						size="sm"
+       | ^^^^^^^^^
+>  583 | 						variant="outline"
+       | ^^^^^^^^^^^^^^^^^
+>  584 | 						disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  585 | 						onClick={() => router.push("/")}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  586 | 					>
+       | ^
+>  587 | 						<Home></Home>
+       | ^^^^^^^^^^^^^
+>  588 | 					</Button>
+       | ^^^^^^^^^
+>  589 | 					{interviewOpen && round?.current && (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  590 | 						<>
+       | ^^
+>  591 | 							<Button
+       | ^^^^^^^
+>  592 | 								size="sm"
+       | ^^^^^^^^^
+>  593 | 								variant="outline"
+       | ^^^^^^^^^^^^^^^^^
+>  594 | 								disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  595 | 								onClick={() => void togglePause()}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  596 | 								aria-label={
+       | ^^^^^^^^^^^^
+>  597 | 									session?.status === "paused"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  598 | 										? "Resume interview"
+       | ^^^^^^^^^^^^^^^^^^^^
+>  599 | 										: "Pause interview"
+       | ^^^^^^^^^^^^^^^^^^^
+>  600 | 								}
+       | ^
+>  601 | 								title={
+       | ^^^^^^^
+>  602 | 									session?.status === "paused"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  603 | 										? "Resume interview"
+       | ^^^^^^^^^^^^^^^^^^^^
+>  604 | 										: "Pause interview"
+       | ^^^^^^^^^^^^^^^^^^^
+>  605 | 								}
+       | ^
+>  606 | 							>
+       | ^
+>  607 | 								<PlayPauseIcon paused={session?.status === "paused"} />
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  608 | 							</Button>
+       | ^^^^^^^^^
+>  609 | 						</>
+       | ^^^
+>  610 | 					)}
+       | ^^
+>  611 |
+       | ^
+>  612 | 					<div className="pt-2 text-xs">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  613 | 						{round && !round.current ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  614 | 							<span className="block truncate whitespace-nowrap text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  615 | 								previous round · read only
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  616 | 							</span>
+       | ^^^^^^^
+>  617 | 						) : session?.status === "paused" ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  618 | 							<span className="block truncate whitespace-nowrap text-amber-300">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  619 | 								interview paused
+       | ^^^^^^^^^^^^^^^^
+>  620 | 							</span>
+       | ^^^^^^^
+>  621 | 						) : round?.status !== "active" ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  622 | 							<span className="block truncate whitespace-nowrap text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  623 | 								round finished
+       | ^^^^^^^^^^^^^^
+>  624 | 							</span>
+       | ^^^^^^^
+>  625 | 						) : left !== null ? (
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  626 | 							<span
+       | ^^^^^
+>  627 | 								className={
+       | ^^^^^^^^^^^
+>  628 | 									"mt-1 flex items-center justify-between rounded-lg border px-3 py-2 font-mono text-lg fo...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  629 | 									(left <= 150
+       | ^^^^^^^^^^^^
+>  630 | 										? "border-red-500/60 bg-red-950/50 text-red-300"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  631 | 										: "border-sky-500/40 bg-sky-950/40 text-sky-200")
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  632 | 								}
+       | ^
+>  633 | 							>
+       | ^
+>  634 | 								<span>
+       | ^^^^^^
+>  635 | 									⏳ {String(Math.floor(left / 60)).padStart(2, "0")}:
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  636 | 									{String(left % 60).padStart(2, "0")}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  637 | 								</span>
+       | ^^^^^^^
+>  638 | 							</span>
+       | ^^^^^^^
+>  639 | 						) : (
+       | ^^^^^
+>  640 | 							<span className="text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  641 | 								budget: {round?.time_budget_min} min
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  642 | 							</span>
+       | ^^^^^^^
+>  643 | 						)}
+       | ^^
+>  644 | 					</div>
+       | ^^^^^^
+>  645 | 				</div>
+       | ^^^^^^
+>  646 | 				{interviewOpen && (
+       | ^^^^^^^^^^^^^^^^^^^
+>  647 | 					<div className="flex shrink-0 gap-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  648 | 						<Button
+       | ^^^^^^^
+>  649 | 							size="sm"
+       | ^^^^^^^^^
+>  650 | 							variant="outline"
+       | ^^^^^^^^^^^^^^^^^
+>  651 | 							className="border-red-900/70 text-red-300 hover:bg-red-950/40"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  652 | 							disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  653 | 							onClick={() => void exitInterview()}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  654 | 						>
+       | ^
+>  655 | 							End Interview
+       | ^^^^^^^^^^^^^
+>  656 | 						</Button>
+       | ^^^^^^^^^
+>  657 | 					</div>
+       | ^^^^^^
+>  658 | 				)}
+       | ^^
+>  659 | 			</div>
+       | ^^^^^^
+>  660 | 			<div className="grid gap-5 ">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  661 | 				{/* live chat + editor */}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  662 |
+       | ^
+>  663 | 				{showInterviewWorkspace ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  664 | 					<div className={isDsa ? "grid gap-5 xl:grid-cols-2" : ""}>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  665 | 						<Card className="flex min-h-[560px] flex-col hairline-panel">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  666 | 							<CardHeader className="pb-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  667 | 								<CardTitle className="text-sm">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  668 | 									{stageName} · interviewer
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^
+>  669 | 								</CardTitle>
+       | ^^^^^^^^^^^^
+>  670 | 							</CardHeader>
+       | ^^^^^^^^^^^^^
+>  671 | 							<CardContent className="flex grow flex-col gap-3">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  672 | 								<div
+       | ^^^^
+>  673 | 									ref={chatRef}
+       | ^^^^^^^^^^^^^
+>  674 | 									className="max-h-[520px] grow space-y-3 overflow-y-auto pr-1"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  675 | 								>
+       | ^
+>  676 | 									{tells.map((t, i) => (
+       | ^^^^^^^^^^^^^^^^^^^^^^
+>  677 | 										<TellRow
+       | ^^^^^^^^
+>  678 | 											key={i}
+       | ^^^^^^^
+>  679 | 											t={t}
+       | ^^^^^
+>  680 | 											speakOverride={
+       | ^^^^^^^^^^^^^^^
+>  681 | 												reveal && t.qOrd === reveal.ord
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  682 | 													? reveal.shown
+       | ^^^^^^^^^^^^^^
+>  683 | 													: undefined
+       | ^^^^^^^^^^^
+>  684 | 											}
+       | ^
+>  685 | 										/>
+       | ^^
+>  686 | 									))}
+       | ^^^
+>  687 | 									{(busy || voiceState !== "idle") && (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  688 | 										<InterviewerActivity voiceState={voiceState} />
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  689 | 									)}
+       | ^^
+>  690 | 									{round?.idle_nudge && (
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+>  691 | 										<p className="rounded-md border border-amber-800/60 bg-amber-950/30 px-3 py-2 text-xs te...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  692 | 											{round.idle_nudge.text}
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+>  693 | 										</p>
+       | ^^^^
+>  694 | 									)}
+       | ^^
+>  695 | 								</div>
+       | ^^^^^^
+>  696 | 								{err && (
+       | ^^^^^^^^^
+>  697 | 									<p className="rounded-md bg-red-950/50 px-3 py-2 text-sm text-red-300">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  698 | 										{err}
+       | ^^^^^
+>  699 | 									</p>
+       | ^^^^
+>  700 | 								)}
+       | ^^
+>  701 | 								<form
+       | ^^^^^
+>  702 | 									className="space-y-3"
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  703 | 									onSubmit={(e) => {
+       | ^^^^^^^^^^^^^^^^^^
+>  704 | 										e.preventDefault();
+       | ^^^^^^^^^^^^^^^^^^^
+>  705 | 										void send();
+       | ^^^^^^^^^^^^
+>  706 | 									}}
+       | ^^
+>  707 | 								>
+       | ^
+>  708 | 									{inputMode === "voice" ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  709 | 										<div className="rounded-xl border border-sky-800/80 bg-sky-950/25 p-4">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  710 | 											<div className="mb-3 flex items-start justify-between gap-3">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  711 | 												<button
+       | ^^^^^^^
+>  712 | 													type="button"
+       | ^^^^^^^^^^^^^
+>  713 | 													className="text-xs text-neutral-400 underline underline-offset-4 hover:text-neutral-100"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  714 | 													onClick={() => switchInputMode("text")}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  715 | 												>
+       | ^
+>  716 | 													Type instead
+       | ^^^^^^^^^^^^
+>  717 | 												</button>
+       | ^^^^^^^^^
+>  718 | 											</div>
+       | ^^^^^^
+>  719 | 											<div className="flex flex-wrap items-center gap-3">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  720 | 												{stt.state === "recording" ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  721 | 													<>
+       | ^^
+>  722 | 														<Button
+       | ^^^^^^^
+>  723 | 															className="min-h-14"
+       | ^^^^^^^^^^^^^^^^^^^^
+>  724 | 															type="button"
+       | ^^^^^^^^^^^^^
+>  725 | 															onClick={() => finishSend()}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  726 | 															disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  727 | 														>
+       | ^
+>  728 | 															Done
+       | ^^^^
+>  729 | 														</Button>
+       | ^^^^^^^^^
+>  730 | 														<Button
+       | ^^^^^^^
+>  731 | 															className="min-h-14 border-red-400/80 text-red-300 hover:bg-red-950/40"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  732 | 															variant="outline"
+       | ^^^^^^^^^^^^^^^^^
+>  733 | 															type="button"
+       | ^^^^^^^^^^^^^
+>  734 | 															onClick={() => stt.stop(true)}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  735 | 															disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  736 | 														>
+       | ^
+>  737 | 															Stop recording
+       | ^^^^^^^^^^^^^^
+>  738 | 														</Button>
+       | ^^^^^^^^^
+>  739 | 														<span className="text-xs text-neutral-400">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  740 | 															Listening…
+       | ^^^^^^^^^^
+>  741 | 														</span>
+       | ^^^^^^^
+>  742 | 													</>
+       | ^^^
+>  743 | 												) : (
+       | ^^^^^
+>  744 | 													<>
+       | ^^
+>  745 | 														<button
+       | ^^^^^^^
+>  746 | 															type="button"
+       | ^^^^^^^^^^^^^
+>  747 | 															className={
+       | ^^^^^^^^^^^
+>  748 | 																"flex min-h-14 items-center gap-3 rounded-lg border px-4 py-3 text-sm font-medium transi...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  749 | 																(stt.state === "transcribing"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  750 | 																	? "border-neutral-700 bg-neutral-900 text-neutral-300"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  751 | 																	: "border-sky-500/70 bg-sky-900/50 text-sky-50 hover:bg-sky-900")
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  752 | 															}
+       | ^
+>  753 | 															onClick={() => startStt()}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  754 | 															disabled={
+       | ^^^^^^^^^^
+>  755 | 																busy ||
+       | ^^^^^^^
+>  756 | 																stt.state === "transcribing" ||
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  757 | 																round?.status !== "active" ||
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  758 | 																!round.current
+       | ^^^^^^^^^^^^^^
+>  759 | 															}
+       | ^
+>  760 | 															aria-label="Start recording"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  761 | 														>
+       | ^
+>  762 | 															<MicIcon recording={false} />
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  763 | 															<span>
+       | ^^^^^^
+>  764 | 																{stt.state === "transcribing"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  765 | 																	? "Preparing your words…"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^
+>  766 | 																	: "Start speaking"}
+       | ^^^^^^^^^^^^^^^^^^^
+>  767 | 															</span>
+       | ^^^^^^^
+>  768 | 														</button>
+       | ^^^^^^^^^
+>  769 | 														<span className="text-xs text-neutral-400">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  770 | 															Click on the mic to start speaking. While recording, choose Done to send
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  771 | 															your answer, or Stop recording to discard it and start over.
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  772 | 														</span>
+       | ^^^^^^^
+>  773 | 													</>
+       | ^^^
+>  774 | 												)}
+       | ^^
+>  775 | 											</div>
+       | ^^^^^^
+>  776 | 										</div>
+       | ^^^^^^
+>  777 | 									) : openerRecoveryNeeded ? (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  778 | 										<Card className="flex min-h-[560px] flex-col hairline-panel">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  779 | 											<CardHeader>
+       | ^^^^^^^^^^^^
+>  780 | 												<CardTitle className="text-sm">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  781 | 													Interviewer is unavailable
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  782 | 												</CardTitle>
+       | ^^^^^^^^^^^^
+>  783 | 											</CardHeader>
+       | ^^^^^^^^^^^^^
+>  784 | 											<CardContent className="flex grow flex-col items-center justify-center gap-3 text-center">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  785 | 												<p className="max-w-md text-sm text-neutral-400">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  786 | 													The opening question could not be generated. This is usually temporary.
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  787 | 												</p>
+       | ^^^^
+>  788 | 												{err && (
+       | ^^^^^^^^^
+>  789 | 													<p className="max-w-md text-sm text-red-300">{err}</p>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  790 | 												)}
+       | ^^
+>  791 | 												<Button
+       | ^^^^^^^
+>  792 | 													onClick={async () => {
+       | ^^^^^^^^^^^^^^^^^^^^^^
+>  793 | 														setBusy(true);
+       | ^^^^^^^^^^^^^^
+>  794 | 														setErr(null);
+       | ^^^^^^^^^^^^^
+>  795 | 														try {
+       | ^^^^^
+>  796 | 															await api.post(`/rounds/${round.round_id}/open`);
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  797 | 															setRound(
+       | ^^^^^^^^^
+>  798 | 																await api.get<RoundState>(`/rounds/${round.round_id}`),
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  799 | 															);
+       | ^^
+>  800 | 														} catch (e) {
+       | ^^^^^^^^^^^^^
+>  801 | 															setErr(String(e));
+       | ^^^^^^^^^^^^^^^^^^
+>  802 | 														} finally {
+       | ^^^^^^^^^^^
+>  803 | 															setBusy(false);
+       | ^^^^^^^^^^^^^^^
+>  804 | 														}}}
+       | ^^^
+>  805 | 													disabled={busy}
+       | ^^^^^^^^^^^^^^^
+>  806 | 												>
+       | ^
+>  807 | 													{busy ? "Trying again…" : "Try again"}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  808 | 												</Button>
+       | ^^^^^^^^^
+>  809 | 											</CardContent>
+       | ^^^^^^^^^^^^^^
+>  810 | 										</Card>
+       | ^^^^^^^
+>  811 | 									) : (
+       | ^^^^^
+>  812 | 										<div>
+       | ^^^^^
+>  813 | 											<div className="mb-2 flex items-center justify-between">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  814 | 												<span className="text-sm font-medium text-neutral-200">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  815 | 													Type your answer
+       | ^^^^^^^^^^^^^^^^
+>  816 | 												</span>
+       | ^^^^^^^
+>  817 | 												<button
+       | ^^^^^^^
+>  818 | 													type="button"
+       | ^^^^^^^^^^^^^
+>  819 | 													className="text-xs text-sky-300 underline underline-offset-4 hover:text-sky-100"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  820 | 													onClick={() => switchInputMode("voice")}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  821 | 												>
+       | ^
+>  822 | 													Use voice
+       | ^^^^^^^^^
+>  823 | 												</button>
+       | ^^^^^^^^^
+>  824 | 											</div>
+       | ^^^^^^
+>  825 | 											<div className="flex gap-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  826 | 												<Input
+       | ^^^^^^
+>  827 | 													placeholder={
+       | ^^^^^^^^^^^^^
+>  828 | 														round?.status !== "active"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  829 | 															? "round finished — continue to the next round"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  830 | 															: "Type your answer, then press Send…"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  831 | 														}
+       | ^
+>  832 | 													value={draft}
+       | ^^^^^^^^^^^^^
+>  833 | 													onChange={(e) => {
+       | ^^^^^^^^^^^^^^^^^^
+>  834 | 														const value = e.target.value;
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  835 | 														if (value.trim()) {
+       | ^^^^^^^^^^^^^^^^^^^
+>  836 | 															voiceCancelRef.current?.();
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  837 | 															setVoiceState("idle");
+       | ^^^^^^^^^^^^^^^^^^^^^^
+>  838 | 															setVoiceReady(true);
+       | ^^^^^^^^^^^^^^^^^^^^
+>  839 | 															setReveal(null);
+       | ^^^^^^^^^^^^^^^^
+>  840 | 														}
+       | ^
+>  841 | 														setDraft(value);
+       | ^^^^^^^^^^^^^^^^
+>  842 | 														}}
+       | ^^
+>  843 | 													disabled={
+       | ^^^^^^^^^^
+>  844 | 														busy || round?.status !== "active" || !round.current
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  845 | 														}
+       | ^
+>  846 | 												/>
+       | ^^
+>  847 | 												<Button
+       | ^^^^^^^
+>  848 | 													type="submit"
+       | ^^^^^^^^^^^^^
+>  849 | 													disabled={
+       | ^^^^^^^^^^
+>  850 | 														busy ||
+       | ^^^^^^^
+>  851 | 														!draft.trim() ||
+       | ^^^^^^^^^^^^^^^^
+>  852 | 														round?.status !== "active" ||
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  853 | 														!round.current
+       | ^^^^^^^^^^^^^^
+>  854 | 														}
+       | ^
+>  855 | 												>
+       | ^
+>  856 | 													Send
+       | ^^^^
+>  857 | 												</Button>
+       | ^^^^^^^^^
+>  858 | 											</div>
+       | ^^^^^^
+>  859 | 										</div>
+       | ^^^^^^
+>  860 | 									)}
+       | ^^
+>  861 | 								</form>
+       | ^^^^^^^
+>  862 | 								{round?.status === "completed" && !finalReport && (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  863 | 									<Button onClick={() => nextRound()}>Start next round</Button>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  864 | 								)}
+       | ^^
+>  865 | 								{finalReport && (
+       | ^^^^^^^^^^^^^^^^^
+>  866 | 									<FinalSummary
+       | ^^^^^^^^^^^^^
+>  867 | 										rep={finalReport}
+       | ^^^^^^^^^^^^^^^^^
+>  868 | 										onOpen={() => router.push(`/reports/${sid}`)}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  869 | 									/>
+       | ^^
+>  870 | 								)}
+       | ^^
+>  871 | 							</CardContent>
+       | ^^^^^^^^^^^^^^
+>  872 | 						</Card>
+       | ^^^^^^^
+>  873 |
+       | ^
+>  874 | 						{isDsa && dq && (
+       | ^^^^^^^^^^^^^^^^^
+>  875 | 							<Card className="hairline-panel">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  876 | 								<CardHeader className="pb-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  877 | 									<CardTitle className="text-sm">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  878 | 										{dq.payload.title}{" "}
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+>  879 | 										<span className="text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  880 | 											({dq.payload.expected_complexity})
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  881 | 										</span>
+       | ^^^^^^^
+>  882 | 									</CardTitle>
+       | ^^^^^^^^^^^^
+>  883 | 								</CardHeader>
+       | ^^^^^^^^^^^^^
+>  884 | 								<CardContent className="space-y-3">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  885 | 									<div className="flex gap-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  886 | 										{(["python", "javascript"] as const).map((l) => (
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  887 | 											<Button
+       | ^^^^^^^
+>  888 | 												key={l}
+       | ^^^^^^^
+>  889 | 												size="sm"
+       | ^^^^^^^^^
+>  890 | 												variant={lang === l ? "default" : "outline"}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  891 | 												onClick={() => setLang(l)}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  892 | 											>
+       | ^
+>  893 | 												{l}
+       | ^^^
+>  894 | 											</Button>
+       | ^^^^^^^^^
+>  895 | 										))}
+       | ^^^
+>  896 | 									</div>
+       | ^^^^^^
+>  897 | 									<CodeMirror
+       | ^^^^^^^^^^^
+>  898 | 										className="text-left"
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  899 | 										value={code}
+       | ^^^^^^^^^^^^
+>  900 | 										extensions={exts}
+       | ^^^^^^^^^^^^^^^^^
+>  901 | 										height="300px"
+       | ^^^^^^^^^^^^^^
+>  902 | 										theme="dark"
+       | ^^^^^^^^^^^^
+>  903 | 										basicSetup={{ tabSize: 4 }}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  904 | 										onChange={setCode}
+       | ^^^^^^^^^^^^^^^^^^
+>  905 | 									/>
+       | ^^
+>  906 | 									<div className="flex gap-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  907 | 										<Button size="sm" variant="outline" onClick={runSamples}>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  908 | 											Run samples
+       | ^^^^^^^^^^^
+>  909 | 										</Button>
+       | ^^^^^^^^^
+>  910 | 										<Button size="sm" onClick={submit}>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  911 | 											Submit (hidden tests)
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  912 | 										</Button>
+       | ^^^^^^^^^
+>  913 | 									</div>
+       | ^^^^^^
+>  914 | 									{samples && <TestLine label="samples" s={samples} />}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  915 | 									{hidden && <TestLine label="hidden" s={hidden} />}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  916 | 								</CardContent>
+       | ^^^^^^^^^^^^^^
+>  917 | 							</Card>
+       | ^^^^^^^
+>  918 | 						)}
+       | ^^
+>  919 | 					</div>
+       | ^^^^^^
+>  920 | 				) : (
+       | ^^^^^
+>  921 | 					<Card className="flex min-h-[560px] flex-col hairline-panel">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  922 | 						<CardHeader className="pb-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  923 | 							<CardTitle className="text-sm">Conversation history</CardTitle>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  924 | 						</CardHeader>
+       | ^^^^^^^^^^^^^
+>  925 | 						<CardContent className="flex grow flex-col gap-4">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  926 | 							<div className="flex items-start justify-between gap-4 rounded-lg border border-neutral-...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  927 | 								<div>
+       | ^^^^^
+>  928 | 									<p className="text-sm font-medium text-neutral-200">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  929 | 										{session?.status === "aborted"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  930 | 											? "Interview exited"
+       | ^^^^^^^^^^^^^^^^^^^^
+>  931 | 											: round?.status === "completed"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  932 | 												? "Round complete"
+       | ^^^^^^^^^^^^^^^^^^
+>  933 | 												: "Interview complete"}
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+>  934 | 									</p>
+       | ^^^^
+>  935 | 									<p className="mt-1 text-xs text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  936 | 										Read-only transcript. New responses are disabled.
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  937 | 									</p>
+       | ^^^^
+>  938 | 								</div>
+       | ^^^^^^
+>  939 | 								{finalReport && (
+       | ^^^^^^^^^^^^^^^^^
+>  940 | 									<FinalSummary
+       | ^^^^^^^^^^^^^
+>  941 | 										rep={finalReport}
+       | ^^^^^^^^^^^^^^^^^
+>  942 | 										onOpen={() => router.push(`/reports/${sid}`)}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  943 | 									/>
+       | ^^
+>  944 | 								)}
+       | ^^
+>  945 | 							</div>
+       | ^^^^^^
+>  946 | 							{tells.length > 0 ? (
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  947 | 								<div className="max-h-[460px] grow space-y-3 overflow-y-auto pr-1">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  948 | 									{tells.map((t, i) => (
+       | ^^^^^^^^^^^^^^^^^^^^^^
+>  949 | 										<TellRow key={i} t={t} />
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^
+>  950 | 									))}
+       | ^^^
+>  951 | 								</div>
+       | ^^^^^^
+>  952 | 							) : (
+       | ^^^^^
+>  953 | 								<p className="flex grow items-center justify-center text-sm text-neutral-500">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  954 | 									No conversation was saved for this round.
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  955 | 								</p>
+       | ^^^^
+>  956 | 							)}
+       | ^^
+>  957 | 						</CardContent>
+       | ^^^^^^^^^^^^^^
+>  958 | 					</Card>
+       | ^^^^^^^
+>  959 | 				)}
+       | ^^
+>  960 | 			</div>
+       | ^^^^^^
+>  961 | 			{nextRoundReady && (
+       | ^^^^^^^^^^^^^^^^^^^^
+>  962 | 				<div
+       | ^^^^
+>  963 | 					className="fixed inset-0 z-40 flex items-center justify-center bg-black/65 px-4"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  964 | 					role="dialog"
+       | ^^^^^^^^^^^^^
+>  965 | 					aria-modal="true"
+       | ^^^^^^^^^^^^^^^^^
+>  966 | 					aria-labelledby="next-round-title"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  967 | 				>
+       | ^
+>  968 | 					<div className="w-full max-w-sm rounded-xl border border-border bg-popover p-5 shadow-2xl">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  969 | 						<h2
+       | ^^^
+>  970 | 							id="next-round-title"
+       | ^^^^^^^^^^^^^^^^^^^^^
+>  971 | 							className="text-base font-semibold text-neutral-100"
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  972 | 						>
+       | ^
+>  973 | 							Round complete
+       | ^^^^^^^^^^^^^^
+>  974 | 						</h2>
+       | ^^^^^
+>  975 | 						<p className="mt-2 text-sm text-neutral-400">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  976 | 							Your responses have been saved. Ready to continue to the next
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  977 | 							round?
+       | ^^^^^^
+>  978 | 						</p>
+       | ^^^^
+>  979 | 						<div className="mt-5 flex justify-end gap-2">
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  980 | 							<Button
+       | ^^^^^^^
+>  981 | 								variant="outline"
+       | ^^^^^^^^^^^^^^^^^
+>  982 | 								onClick={() => setNextRoundReady(false)}
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  983 | 							>
+       | ^
+>  984 | 								Review
+       | ^^^^^^
+>  985 | 							</Button>
+       | ^^^^^^^^^
+>  986 | 							<Button onClick={() => void nextRound()} disabled={busy}>
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  987 | 								Next round
+       | ^^^^^^^^^^
+>  988 | 							</Button>
+       | ^^^^^^^^^
+>  989 | 						</div>
+       | ^^^^^^
+>  990 | 					</div>
+       | ^^^^^^
+>  991 | 				</div>
+       | ^^^^^^
+>  992 | 			)}
+       | ^^
+>  993 | 			{toast && (
+       | ^^^^^^^^^^^
+>  994 | 				<div
+       | ^^^^
+>  995 | 					className="fixed inset-x-4 top-4 z-50 mx-auto w-fit max-w-[calc(100vw-2rem)] rounded-lg ...
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  996 | 					role="status"
+       | ^^^^^^^^^^^^^
+>  997 | 					aria-live="polite"
+       | ^^^^^^^^^^^^^^^^^^
+>  998 | 				>
+       | ^
+>  999 | 					{toast}
+       | ^^^^^^^
+> 1000 | 				</div>
+       | ^^^^^^
+> 1001 | 			)}
+       | ^^
+> 1002 | 		</div>
+       | ^^^^^^
+> 1003 | 	);
+       | ^^
+  1004 | }
+  1005 |
+  1006 | function TellRow({ t, speakOverride }: { t: Tell; speakOverride?: string }) {
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/app/session/[id]/InterviewClient.tsx
+    ./src/app/session/[id]/page.tsx 
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 53ms (next.js: 13ms, application-code: 40ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 74ms (next.js: 23ms, application-code: 51ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 56ms (next.js: 13ms, application-code: 44ms)
+✓ Compiled in 104ms
+✓ Compiled in 41ms
+✓ Compiled in 98ms
+✓ Compiled in 47ms
+✓ Compiled in 38ms
+✓ Compiled in 40ms
+✓ Compiled in 41ms
+✓ Compiled in 50ms
+✓ Compiled in 37ms
+✓ Compiled in 35ms
+✓ Compiled in 44ms
+✓ Compiled in 45ms
+✓ Compiled in 46ms
+✓ Compiled in 43ms
+✓ Compiled in 35ms
+✓ Compiled in 38ms
+✓ Compiled in 51ms
+ GET /login 200 in 31ms (next.js: 2ms, application-code: 29ms)
+ GET /session/00000000-0000-0000-0000-000000000000 200 in 51ms (next.js: 14ms, application-code: 37ms)
+ GET /session/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 76ms (next.js: 15ms, application-code: 61ms)
+ GET /reports/7215f558-234b-4ef9-9c02-319d602f66b4 200 in 487ms (next.js: 466ms, application-code: 21ms)
+✓ Compiled in 42ms
+ GET / 200 in 15ms (next.js: 1.3ms, application-code: 14ms)
+ GET / 200 in 32ms (next.js: 1.0ms, application-code: 31ms)
+✓ Compiled in 62ms
+ GET / 200 in 17ms (next.js: 1.8ms, application-code: 16ms)
+✓ Compiled in 304ms
+ GET / 200 in 19ms (next.js: 2ms, application-code: 17ms)
+✓ Compiled in 53ms
+✓ Compiled in 28ms
+✓ Compiled in 40ms
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 34ms
+⨯ ReferenceError: signedIn is not defined
+    at Home (src/app/page.tsx:102:3)
+  100 |   }
+  101 |
+> 102 |   if (signedIn === null) {
+      |   ^
+  103 |     return <div className="mx-auto max-w-3xl py-24 text-center text-sm text-neutral-500">Loading…</div>;
+  104 |   }
+  105 | {
+  digest: '3778825268'
+}
+ GET / 500 in 100ms (next.js: 1.3ms, application-code: 99ms)
+ GET / 200 in 26ms (next.js: 1.3ms, application-code: 25ms)
+ GET /login 200 in 29ms (next.js: 1.5ms, application-code: 27ms)
+ GET /reports 200 in 26ms (next.js: 1.7ms, application-code: 25ms)
+[browser] Uncaught ReferenceError: signedIn is not defined
+    at Home (src/app/page.tsx:102:3)
+  100 |   }
+  101 |
+> 102 |   if (loading) {
+      |   ^
+  103 |     return <div className="mx-auto max-w-3xl py-24 text-center text-sm text-neutral-500">Loading…</div>;
+  104 |   }
+  105 |
+ GET / 200 in 30ms (next.js: 1.0ms, application-code: 29ms)
+ GET / 200 in 7ms (next.js: 1.3ms, application-code: 6ms)
+ GET / 200 in 12ms (next.js: 0.9ms, application-code: 12ms)
+ GET /login 200 in 31ms (next.js: 0.9ms, application-code: 30ms)
+ GET / 200 in 17ms (next.js: 1.8ms, application-code: 15ms)
+ GET / 200 in 28ms (next.js: 0.8ms, application-code: 27ms)
+ GET /session/8039a4dc-84e8-4161-84f8-545e00854787 200 in 36ms (next.js: 15ms, application-code: 21ms)
+ GET /session/8039a4dc-84e8-4161-84f8-545e00854787 200 in 52ms (next.js: 15ms, application-code: 37ms)
+ GET /session/8039a4dc-84e8-4161-84f8-545e00854787 200 in 54ms (next.js: 16ms, application-code: 39ms)
+ GET / 200 in 25ms (next.js: 1.9ms, application-code: 23ms)
+ GET /session/b6bb5c3a-6cff-4a53-80b7-698d973c0b89 200 in 58ms (next.js: 20ms, application-code: 38ms)
+ GET / 200 in 17ms (next.js: 2ms, application-code: 15ms)
+ GET /session/d626ebeb-c5d0-4a42-9488-a6148e3d4d3f 200 in 35ms (next.js: 16ms, application-code: 19ms)
+✓ Compiled in 33ms
+✓ Compiled in 20ms
+✓ Compiled in 46ms
+✓ Compiled in 56ms
+✓ Compiled in 38ms
+✓ Compiled in 33ms
+✓ Compiled in 39ms
+ GET / 200 in 23ms (next.js: 1.0ms, application-code: 22ms)
+ GET /login 200 in 26ms (next.js: 0.7ms, application-code: 25ms)
+ GET /session/d626ebeb-c5d0-4a42-9488-a6148e3d4d3f 200 in 69ms (next.js: 18ms, application-code: 50ms)
+Failed to proxy http://localhost:8000/api/rounds/7274154c-1d04-4154-9e39-2d6d810d4e2d/open Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+ GET /reports/d626ebeb-c5d0-4a42-9488-a6148e3d4d3f 200 in 35ms (next.js: 16ms, application-code: 19ms)
+ GET / 200 in 22ms (next.js: 2.0ms, application-code: 20ms)
+ GET /session/90d8c33a-49df-459a-81f2-6b45eb99d910 200 in 32ms (next.js: 14ms, application-code: 18ms)
+Failed to proxy http://localhost:8000/api/rounds/0483389a-0714-4cd5-9e3a-1f6eb675d959/open Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+Error: socket hang up
+    at ignore-listed frames {
+  code: 'ECONNRESET'
+}
+✓ Compiled in 49ms
+✓ Compiled in 1242ms
+ GET /session/90d8c33a-49df-459a-81f2-6b45eb99d910 200 in 95ms (next.js: 66ms, application-code: 29ms)
+✓ Compiled in 855ms
+✓ Compiled in 903ms
+✓ Compiled in 45ms
+ GET / 200 in 62ms (next.js: 44ms, application-code: 17ms)
+ GET / 200 in 33ms (next.js: 0.9ms, application-code: 32ms)
+ GET / 200 in 53ms (next.js: 0.8ms, application-code: 52ms)
+✓ Compiled in 27ms
+ GET / 200 in 30ms (next.js: 3ms, application-code: 27ms)
+ GET / 200 in 65ms (next.js: 1.1ms, application-code: 64ms)
+ GET /session/10545b47-d739-42ed-9893-671519f08f1b 200 in 43ms (next.js: 18ms, application-code: 25ms)
+ GET /session/10545b47-d739-42ed-9893-671519f08f1b 200 in 62ms (next.js: 18ms, application-code: 44ms)
+ GET / 200 in 19ms (next.js: 1.1ms, application-code: 18ms)
+ GET /session/cb92d76f-d839-4dad-8744-fee7aa0bca78 200 in 36ms (next.js: 16ms, application-code: 20ms)
+ GET / 200 in 18ms (next.js: 1.7ms, application-code: 17ms)
+ GET /session/cd5ae79b-bf57-495d-8bb7-c28059d61823 200 in 50ms (next.js: 30ms, application-code: 20ms)
+✓ Compiled in 54ms
+✓ Compiled in 80ms
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [[object Object], true]
+Incoming: [[object Object], paused, true] 
+    at InterviewClient (src/app/session/[id]/InterviewClient.tsx:575:3)
+    at Set.forEach (<anonymous>)
+  573 | 		round?.idle_nudge,
+  574 | 		voiceReady,
+> 575 | 	]);
+      |  ^
+  576 |
+  577 | 	useEffect(() => {
+  578 | 		const nudge = round?.idle_nudge; (src/app/session/[id]/InterviewClient.tsx:575:3)
+ GET /session/cd5ae79b-bf57-495d-8bb7-c28059d61823 200 in 58ms (next.js: 16ms, application-code: 42ms)
+✓ Compiled in 29ms
+ GET /session/cd5ae79b-bf57-495d-8bb7-c28059d61823 200 in 65ms (next.js: 16ms, application-code: 49ms)
+ GET / 200 in 16ms (next.js: 3ms, application-code: 13ms)
+ GET /reports 200 in 33ms (next.js: 13ms, application-code: 20ms)
+ GET /session/cd5ae79b-bf57-495d-8bb7-c28059d61823 200 in 43ms (next.js: 17ms, application-code: 25ms)
+ GET / 200 in 50ms (next.js: 1.8ms, application-code: 48ms)
+ GET / 200 in 27ms (next.js: 1.0ms, application-code: 26ms)
+ GET / 200 in 26ms (next.js: 1.3ms, application-code: 24ms)
+ GET /session/cba8df67-5cf4-4262-bc71-f57f8c7f1035 200 in 38ms (next.js: 17ms, application-code: 21ms)
+ GET / 200 in 22ms (next.js: 1.1ms, application-code: 21ms)

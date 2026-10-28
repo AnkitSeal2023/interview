@@ -1,0 +1,13 @@
+# artifacts
+__pycache__/
+*.pyc
+.venv/
+.env
+node_modules/
+dist/
+*.sqlite3
+uploads/
+whisper_models/
+.pytest_cache/
+benchmark_results/*.json
+!.gitkeep
