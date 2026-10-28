@@ -1,8 +1,15 @@
-# SWE Mock Interview — AI-powered interview platform
+# Tech Mock Interview — AI-powered interview platform
 
-An end-to-end mock-interview platform for entry/mid SDE–SWE roles: upload a resume (PDF),
-optionally a JD, pick rounds — run a realistic one-question-at-a-time interview with local STT
-and browser TTS — get evidence-backed reports and an INR salary estimate.
+An end-to-end mock-interview platform for entry/mid tech roles — not just SWE: pick your
+track (Software Engineer, Data Analyst, Data Scientist, AI/ML Engineer, Data Engineer,
+DevOps/Cloud, Cybersecurity, QA, Product Manager, Business Analyst, UX/Product Designer,
+or auto-detect from your resume/JD), upload the resume (PDF) and optionally a JD, pick
+rounds — run a realistic one-question-at-a-time interview with local STT and browser TTS —
+get evidence-backed reports and an INR salary estimate.
+
+Every role gets its own interview design: role-specific stage names, probing focus
+(SQL/metrics cases for analysts, experimentation & modeling for data scientists, ML systems
+for AI/ML engineers, etc.) and its own scoring competencies.
 
 Stack: **FastAPI + Postgres (dockerized) + Next.js (Tailwind/shadcn) + pluggable LLMs**
 (Groq hosted free tier is the tested default; Ollama/Gemini accepted via `.env` — Ollama is experimental).
@@ -70,7 +77,7 @@ cd frontend && npm install && npm run dev   # http://localhost:3000 (proxies /ap
 ### 3. Verify it's up
 
 Open **http://localhost:3000** in your browser — you should see the setup page where you
-upload a resume (PDF) and start your first interview.
+upload a resume (PDF), pick a role and rounds, and start your first interview.
 
 From a terminal you can also check:
 
@@ -130,17 +137,25 @@ with the local Ollama fallback. Every LLM call is recorded in the `llm_usage` ta
 
 ## What it does
 
-- **Round A** – technical/project oral: anti-regurgitation probing, ≤2 follow-ups per answer,
-  topic-breadth enforcement, "I don't know" handled as skipped, wrap-up when time budget ends.
-- **Round B** – DSA: generated problem **validated at generation time by actually running the
-  reference solution against the generated hidden tests** in a sandbox; falls back to a curated
-  bank if generation fails thrice. Candidate runs samples + submits; hidden tests run in a
-  restricted subprocess (no network, CPU/mem limits, timeouts). Judging is deterministic —
-  the LLM only evaluates the explanation.
-- **Round C** – system design: staged (problem → schema/API → failure/security → trade-offs).
-- **Reports** – per-round + final: overall /10, per-competency scores (only scored when
-  actually tested), evidence quotes, misconceptions, prioritized study plan, and a salary range
-  with explicit assumptions (score only modulates salary ±15%).
+- **Round A** – role-specific technical/experience oral: anti-regurgitation probing, ≤2 follow-ups
+  per answer, topic-breadth enforcement, "I don't know" handled as skipped, wrap-up when time
+  budget ends. Questions follow the selected role's focus and stages (SQL/dashboards for a
+  Data Analyst, experimentation/modeling for a Data Scientist, ML systems for an AI/ML
+  Engineer, projects/APIs/debugging for an SWE, and so on).
+- **Round B** – DSA (Software Engineer track only; other roles get 422 by design): generated
+  problem **validated at generation time by actually running the reference solution against
+  the generated hidden tests** in a sandbox; falls back to a curated bank if generation fails
+  thrice. Candidate runs samples + submits; hidden tests run in a restricted subprocess
+  (no network, CPU/mem limits, timeouts). Judging is deterministic — the LLM only evaluates
+  the explanation.
+- **Round C** – systems + case design, staged (problem → concrete artifact → failure/risk →
+  trade-offs): schema/API and scale for SWEs, metrics/SQL and dashboard work for analysts,
+  experiment design for data scientists, pipeline/architecture for data engineers — the stages
+  come from the selected role's profile.
+- **Reports** – per-round + final: overall /10, per-competency scores from the selected role's
+  competency set (only scored when actually tested), evidence quotes, misconceptions,
+  prioritized study plan, and a salary range with explicit assumptions (score only modulates
+  salary ±15%).
 - **Voice** – mic (faster-whisper, local) for answers; browser speechSynthesis for questions.
 - **Accounts & history** – optional accounts (email + PBKDF2-hashed password, signed HttpOnly
   cookie). Interviews are anonymous by default and **claimed into your account at
@@ -167,6 +182,7 @@ evidence** — hosted models are benchmarked with `GROQ_API_KEY`/`GOOGLE_API_KEY
 backend/app/llm/            provider abstraction (ollama|groq|gemini), usage logging
 backend/app/routers/        resume, interview (rounds A/B/C), coding, reports, stt
 backend/app/services/       extraction, conductor, code_run (sandbox), dsa_gen, report, salary
+backend/app/role_profiles.py per-role interview designs (11 tracks: stages + competencies)
 backend/migrations/         init.sql
 frontend/src/app/           / (setup) · /session/[id] (chat+editor) · /reports (list/detail)
 scripts/benchmark.py        reproducible model comparison

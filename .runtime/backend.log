@@ -211,3 +211,27 @@ INFO:     127.0.0.1:53268 - "GET /health HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:56682 - "GET /health HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:51990 - "GET /health HTTP/1.1" 404 Not Found
 INFO:     127.0.0.1:45422 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59208 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56448 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55516 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55726 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43608 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48858 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60700 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60700 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37806 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37818 - "POST /api/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37818 - "GET /api/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51710 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57728 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45776 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49540 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37284 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60698 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51934 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42680 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58098 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36176 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45344 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44556 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41242 - "GET /health HTTP/1.1" 404 Not Found
