@@ -33,7 +33,7 @@ git clone https://github.com/AnkitSeal2023/interview && cd interview
 **Recommended — Docker (plug & play, everything in containers):**
 
 ```bash
-./scripts/compose.sh
+chmod +x ./scripts/compose.sh && ./scripts/compose.sh
 ```
 
 It is safe to re-run at any time — every step is idempotent. On first run it will:
