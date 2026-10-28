@@ -10,6 +10,15 @@ Stack: **FastAPI + Postgres (existing docker) + Next.js (Tailwind/shadcn) + plug
 ## Quickstart
 
 ```bash
+./scripts/quickstart.sh        # Ubuntu/Arch: installs deps, asks for the Groq API key,
+                               # writes .env, sets up Postgres, migrates, launches all
+                               # services (backend :8000 · tts :8001 · frontend :3000)
+./scripts/quickstart.sh stop   # or: status | restart; -tts also installs the local voice
+```
+
+Manual setup still works:
+
+```bash
 # 1. DB (idempotent; uses the running docker Postgres on :5432 — check .env creds)
 cd backend && uv run python scripts/apply_migrations.py
 
