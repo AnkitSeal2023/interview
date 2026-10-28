@@ -1,0 +1,76 @@
+# SWE Mock Interview — docker-compose (plug & play: `scripts/compose.sh`, or manually `docker compose up -d`)
+#
+# Secrets/keys come from the project-root .env (gitignored; scripts/compose.sh creates and
+# fills it — a random DB/TTS password and AUTH_SECRET, plus your Groq API key).
+# Only :3000 (and :8000 for direct API access) are published to the host; db and tts
+# services stay on the internal network.
+name: interview
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: interview
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d interview"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD}@db:5432/interview
+      GROQ_API_KEY: '${GROQ_API_KEY:?set GROQ_API_KEY in .env (free key: console.groq.com/keys)}'
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      LLM_CONDUCTOR_PROVIDER: groq
+      LLM_EVALUATOR_PROVIDER: groq
+      LLM_EXTRACTOR_PROVIDER: groq
+      LLM_GENERATOR_PROVIDER: groq
+      LLM_REPORT_PROVIDER: groq
+      AUTH_SECRET: ${AUTH_SECRET}
+      STT_MODEL: ${STT_MODEL:-base}
+      TTS_SERVICE_URL: http://tts:8001
+      TTS_INTERNAL_KEY: ${TTS_INTERNAL_KEY:-}
+      MAX_RESUME_MB: ${MAX_RESUME_MB:-15}
+    ports:
+      - "8000:8000"
+    volumes:
+      - stt-models:/app/whisper_models
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    environment:
+      BACKEND_ORIGIN: http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # opt-in heavier voice: `docker compose --profile voice up -d` (or scripts/compose.sh --voice)
+  tts:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.tts
+    profiles: ["voice"]
+    environment:
+      TTS_INTERNAL_KEY: ${TTS_INTERNAL_KEY:-}
+      TTS_CACHE_DIR: /tts-cache
+    volumes:
+      - tts-cache:/tts-cache
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  stt-models:
+  tts-cache:

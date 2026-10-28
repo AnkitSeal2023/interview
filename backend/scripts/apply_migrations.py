@@ -1,4 +1,9 @@
-"""Apply all .sql files in migrations/ to the database (idempotent CREATE IF NOT EXISTS)."""
+"""Apply all .sql files in migrations/ to the database (idempotent CREATE IF NOT EXISTS).
+
+init.sql always runs first: the numbered files reference its tables
+(002_users.sql alters `sessions`), and plain filename sorting would regroup
+them alphabetically after it — only ever observable on a fresh install.
+"""
 import sys
 from pathlib import Path
 
@@ -23,7 +28,8 @@ def ensure_database() -> None:
 
 def main() -> None:
     mig_dir = Path(__file__).resolve().parent.parent / "migrations"
-    files = sorted(mig_dir.glob("*.sql"))
+    files = sorted(mig_dir.glob("*.sql"),
+                   key=lambda p: (0 if p.name == "init.sql" else 1, p.name))
     if not files:
         print("no migrations found")
         sys.exit(0)

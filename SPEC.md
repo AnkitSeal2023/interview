@@ -133,7 +133,7 @@ tier alone exceeds quota, we fall back to local Ollama and document the trade-of
 
 - **Backend** Python 3.14 + FastAPI + `psycopg` (Postgres), PDF text-extract via `pdfplumber`.
 - **Frontend** React 18 + Vite + TypeScript, `@uiw/react-codemirror` for coding editor; plain CSS.
-- **DB** Existing Docker Postgres on port 5432 (creds in `.env`, default `postgres/2004`).
+- **DB** Postgres on port 5432 (connection URL in `.env`, not committed).
 - **Schema** (single `migrations/init.sql`): `sessions`, `rounds`, `questions`, `answers`,
   `code_submissions`, `reports`, `llm_usage`. All keyed by `session_id UUID`, tied to a browser
   `candidate_id` cookie — no passwords, resumes only readable by the browser that uploaded them.

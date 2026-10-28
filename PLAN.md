@@ -37,7 +37,7 @@ Key decisions (D#) — revisit freely, but log it here:
 
 ### Phase 0 — Scaffolding & planning ✅
 - [x] SPEC.md, PLAN.md, .env.example, .gitignore, README skeleton
-- [x] Repo inspection: Postgres up on :5432 (pw: 2004), Node 22, uv available. CORRECTED 27 Oct:
+- [x] Repo inspection: Postgres up on :5432 (local pw in `.env`, not committed), Node 22, uv available. CORRECTED 27 Oct:
       the box DOES have an AMD Radeon RX 6600 (8GB VRAM, ROCm) — Ollama runs 100% on GPU
       (`ollama ps`: "100% GPU", model fully resident in VRAM); repairs earlier assumption of CPU-only.
       Ryzen 5 5500, ROCm dev stack present. faster-whisper STT stays CPU-only (CTranslate2's only

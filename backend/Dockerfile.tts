@@ -1,0 +1,22 @@
+# Optional "real interviewer voice" service (Coqui TTS on CPU torch).
+# Heavy on purpose and isolated: ~2 GB of torch. Selected via the compose `voice`
+# profile. Built from backend/ context (needs only tts_service/).
+FROM python:3.14-slim
+
+WORKDIR /app
+COPY tts_service ./tts_service
+
+# CPU torch + torchaudio (audio IO), then coqui with the `codec` extra
+# (torchcodec — required for audio IO from torch >= 2.9 — needs system ffmpeg)
+RUN apt-get update -qq && apt-get install -y -qq ffmpeg && rm -rf /var/lib/apt/lists/* \
+ && pip install --no-cache-dir torch torchaudio --index-url https://download.pytorch.org/whl/cpu \
+ && pip install --no-cache-dir "coqui-tts[codec]"
+
+# non-interactive model acceptance; model (~110 MB) downloads on first synth and
+# persists in the tts-cache volume
+ENV COQUI_TOS_AGREED=1
+ENV TTS_CACHE_DIR=/tts-cache
+VOLUME /tts-cache
+
+EXPOSE 8001
+CMD ["python", "-m", "tts_service.main"]

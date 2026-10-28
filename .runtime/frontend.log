@@ -11,3 +11,12 @@
  GET / 200 in 60ms (next.js: 1.6ms, application-code: 58ms)
  GET / 200 in 420ms (next.js: 185ms, application-code: 235ms)
  GET / 200 in 60ms (next.js: 3ms, application-code: 57ms)
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+▲ Next.js 16.4.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.149:3000
+✓ Ready in 533ms
+✓ Running next.config.ts took 172ms
+
+ GET / 200 in 401ms (next.js: 193ms, application-code: 208ms)
+ GET / 200 in 94ms (next.js: 14ms, application-code: 80ms)

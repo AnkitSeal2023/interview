@@ -9,7 +9,7 @@ PROJECT_DIR = BASE_DIR.parent                               # repo root
 
 
 class Settings(BaseSettings):
-    database_url: str = "postgresql://postgres:2004@localhost:5432/interview"
+    database_url: str = "postgresql://postgres@localhost:5432/interview"
 
     llm_conductor_provider: Literal["gemini", "groq", "ollama"] = "ollama"
     llm_evaluator_provider: Literal["gemini", "groq", "ollama"] = "ollama"
