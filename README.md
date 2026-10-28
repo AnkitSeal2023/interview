@@ -1,15 +1,10 @@
 # Tech Mock Interview — AI-powered interview platform
 
-An end-to-end mock-interview platform for entry/mid tech roles — not just SWE: pick your
+An end-to-end mock-interview platform for entry/mid tech roles: pick your
 track (Software Engineer, Data Analyst, Data Scientist, AI/ML Engineer, Data Engineer,
-DevOps/Cloud, Cybersecurity, QA, Product Manager, Business Analyst, UX/Product Designer,
-or auto-detect from your resume/JD), upload the resume (PDF) and optionally a JD, pick
+DevOps/Cloud, others, or auto-detect from your resume/JD), upload the resume (PDF) and optionally a JD, pick
 rounds — run a realistic one-question-at-a-time interview with local STT and browser TTS —
 get evidence-backed reports and an INR salary estimate.
-
-Every role gets its own interview design: role-specific stage names, probing focus
-(SQL/metrics cases for analysts, experimentation & modeling for data scientists, ML systems
-for AI/ML engineers, etc.) and its own scoring competencies.
 
 Stack: **FastAPI + Postgres (dockerized) + Next.js (Tailwind/shadcn) + pluggable LLMs**
 (Groq hosted free tier is the tested default; Ollama/Gemini accepted via `.env` — Ollama is experimental).
