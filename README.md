@@ -25,7 +25,7 @@ Stack: **FastAPI + Postgres (dockerized) + Next.js (Tailwind/shadcn) + pluggable
 ### 1. Get the code
 
 ```bash
-git clone <repo-url> interview && cd interview      # or download & unzip
+git clone https://github.com/AnkitSeal2023/interview interview && cd interview      # or download & unzip
 ```
 
 ### 2. Run one command
